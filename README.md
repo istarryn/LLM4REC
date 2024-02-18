@@ -17,56 +17,36 @@
 
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
-|   Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models    |   KAR     |   arXiv23   |     利用LLM的open-world knowledge扩充用户和物品的信息        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/2d2eea2e-c88e-4d9e-ab3e-7dc8f67c90fe)
- |
-|   A First Look at LLM-Powered Generative News Recommendation    |   ONCE(GENRE+DIRE)    |   arXiv23   |     对于开源LLM，利用它们作为特征编码器。对于闭源LLM，使用提示丰富训练数据        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/da1e9be8-d334-4240-8359-4deca3417c96)
- |
-|  LLMRec: Large Language Models with Graph Augmentation for Recommendation     |    LLMRec    |  WSDM24    |    利用LLM进行图数据增强，从item candidates中选出liked item和disliked item    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/d241c52f-611f-47bf-8fb4-7a5095b0a1f4)
- |
+|   Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models    |   KAR     |   arXiv23   |     利用LLM的open-world knowledge扩充用户和物品的信息        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/2d2eea2e-c88e-4d9e-ab3e-7dc8f67c90fe)|
+|   A First Look at LLM-Powered Generative News Recommendation    |   ONCE(GENRE+DIRE)    |   arXiv23   |     对于开源LLM，利用它们作为特征编码器。对于闭源LLM，使用提示丰富训练数据        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/da1e9be8-d334-4240-8359-4deca3417c96) |
+|  LLMRec: Large Language Models with Graph Augmentation for Recommendation     |    LLMRec    |  WSDM24    |    利用LLM进行图数据增强，从item candidates中选出liked item和disliked item    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/d241c52f-611f-47bf-8fb4-7a5095b0a1f4) |
 
 ### Feature Encoder
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
 |   U-BERT: Pre-training user representations for improved recommendation    |   U-BERT     |   AAAI21   |    早期的工作，主要使用BERT编码评论文本         |![image](https://github.com/istarryn/LLM4REC/assets/149132603/61c9c5b1-74b1-4837-8ed8-2e0815e772b4)
  |
-|   Towards universal sequence representation learning for recommender systems    |    UniSRec   |   KDD22   |     用BERT对item text信息进行编码，使用了parametric whitening        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/983492f4-c1c1-43fb-a61b-a3ed3410a8bb)
- |
-|   Learning vector-quantized item representation for transferable sequential recommenders    |    VQ-Rec    |  WWW23    |  首先将文本映射到一个离散索引向量（称为item code ）中，然后使用这些索引来查找code embedding table进行编码           |![image](https://github.com/istarryn/LLM4REC/assets/149132603/ffd44ae0-e85f-4982-9287-ad04ddfadd3c)
- |
-|  Recommender Systems with Generative Retrieval     |    TIGER   |   NIPS23   |使用LLM编码有意义的item ID，直接预测candidate IDs，进行端到端的generative retrieval             |![image](https://github.com/istarryn/LLM4REC/assets/149132603/529b6903-80b5-45ff-95c6-b58cb8b4d3d9)
- |
-|  Representation Learning with Large Language Models for Recommendation     | RLMRec    |  arXiv23   |    通过两次对比学习，对齐LLM编码的语义特征和传统方法的协同特征         |![image](https://github.com/istarryn/LLM4REC/assets/149132603/a4c0366c-e6f1-483d-992b-49ae4ca8dbad)
- |
+|   Towards universal sequence representation learning for recommender systems    |    UniSRec   |   KDD22   |     用BERT对item text信息进行编码，使用了parametric whitening        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/983492f4-c1c1-43fb-a61b-a3ed3410a8bb) |
+|   Learning vector-quantized item representation for transferable sequential recommenders    |    VQ-Rec    |  WWW23    |  首先将文本映射到一个离散索引向量（称为item code ）中，然后使用这些索引来查找code embedding table进行编码           |![image](https://github.com/istarryn/LLM4REC/assets/149132603/ffd44ae0-e85f-4982-9287-ad04ddfadd3c) |
+|  Recommender Systems with Generative Retrieval     |    TIGER   |   NIPS23   |使用LLM编码有意义的item ID，直接预测candidate IDs，进行端到端的generative retrieval             |![image](https://github.com/istarryn/LLM4REC/assets/149132603/529b6903-80b5-45ff-95c6-b58cb8b4d3d9) |
+|  Representation Learning with Large Language Models for Recommendation     | RLMRec    |  arXiv23   |    通过两次对比学习，对齐LLM编码的语义特征和传统方法的协同特征         |![image](https://github.com/istarryn/LLM4REC/assets/149132603/a4c0366c-e6f1-483d-992b-49ae4ca8dbad) |
 ### Scoring/Ranking
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
-|  Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)     |   P5     |   RecSys22   |   针对不同任务设计了多个prompts，并且使用推荐数据集重新进行预训练，最终用于解决zero-shot的推荐问题          |![image](https://github.com/istarryn/LLM4REC/assets/149132603/00b0c432-9da6-4790-936a-06943f5483fd)
- |
-|   Text Is All You Need: Learning Language Representations for Sequential Recommendation    |   RecFormer   |   KDD23   |     将键值对展开为类似句子的prompt ，利用LongFormer训练，输出用户交互序列（兴趣）的表征。然后结合对比学习，进行最后的推荐        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/4e29200f-6ff5-468c-89f6-ba9d9648e44f)
- |
-|  Recommendation as instruction following: A large language model empowered recommendation approach     |   InstructRec    | arXiv23  |   采用instruction tuning，将主动的用户指令和被动的交互信息按照一定格式组织成指令，引导LLM完成多任务推荐场景          |![image](https://github.com/istarryn/LLM4REC/assets/149132603/69fb19c0-2473-4737-937d-4f5372877c70)
- |
-|  A bi-step grounding paradigm for large language models in recommendation systems     |   BIGRec    |  arXiv23  |    针对grounding问题，采用instruction-tuning，实现“Grounding Language Space to Recommendation Space”     |![image](https://github.com/istarryn/LLM4REC/assets/149132603/bb6708c0-faf0-4b60-bd59-10980a4db6b0)
- |
-| A Multi-facet Paradigm to Bridge Large Language Model and Recommendation      |   TransRec   | arXiv23    |  在Item indexing上，将ID, title和attribute都当成Item的facet；在generation grounding上，：将生成的identifiers与in-corpus 的每个item的identifiers取交集选出items    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/ec8971b3-a70f-4102-aefa-4eb41a9ebd43)
- |
-| CoLLM: Integrating Collaborative Embeddings into Large Language Models for Recommendation      |   CoLLM     |  arXiv23    |    将传统模型捕获的协作放到LLM的prompt中，并将其映射到最终的embedding空间     |![image](https://github.com/istarryn/LLM4REC/assets/149132603/77c1bbf2-9765-413e-ba69-bcd2b6fb6f8a)
- |
-| LlamaRec: Two-Stage Recommendation using Large Language Models for Ranking     |  LlamaRec    |  CIKM23    |  一般LLM生成推荐结果的推理成本很高，并且要进一步Grounding。LlamaRec利用一个verbalizer ，将LLM head的输出(即所有tokens的分数)转换为候选items的排名分数      |![image](https://github.com/istarryn/LLM4REC/assets/149132603/350fd16d-5a75-4d31-a9b9-9d4ee5aa92b4)
- |
-|  Large language models are zero-shot rankers for recommender systems   |        |   arXiv23   |     利用LLM对候选物品集合进行zero-shot排序        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/32a8ae0c-4536-40bf-a0c5-ad753400c068)
- |
-|   Language models as recommender systems: Evaluations and limitations    |    LMRecSys  | NeurIPS21     |   采用Prompt tuning的方法，将要预测的物品拆分成多个token，由LLM输出每个token的分布，最终进行推荐          |![image](https://github.com/istarryn/LLM4REC/assets/149132603/de08059f-a75b-47d9-bb12-4799b7ab06ca)
- |
-| Prompt learning for news recommendation    |  Prompt4NR    |  SIGIR23    | 设计离散、连续、混合提示模板，以及它们对应的答案空间。使用prompt ensembling组合效果最好的一组prompt模板             |![image](https://github.com/istarryn/LLM4REC/assets/149132603/4d2c8217-ea18-40af-bd57-660a80884900)
- |
-|  Prompt distillation for efficient llm-based recommendation     |  POD     | CIKM23     |     通过prompt learning学习作为前缀的连续prompt，将离散prompt信息蒸馏到连续prompt        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/892c0f54-730b-4a1c-bdde-da26a3cd67a6)
- |
-| Large Language Models as Zero-Shot Conversational Recommenders      |        |  CIKM23    |   使用具有代表性的大型语言模型在Zero-Shot下对会话推荐任务进行实证研究          |![image](https://github.com/istarryn/LLM4REC/assets/149132603/05dadeef-c3d5-4d71-b4d2-5a54f708746d)
- |
+|  Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)     |   P5     |   RecSys22   |   针对不同任务设计了多个prompts，并且使用推荐数据集重新进行预训练，最终用于解决zero-shot的推荐问题          |![image](https://github.com/istarryn/LLM4REC/assets/149132603/00b0c432-9da6-4790-936a-06943f5483fd) |
+|   Text Is All You Need: Learning Language Representations for Sequential Recommendation    |   RecFormer   |   KDD23   |     将键值对展开为类似句子的prompt ，利用LongFormer训练，输出用户交互序列（兴趣）的表征。然后结合对比学习，进行最后的推荐        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/4e29200f-6ff5-468c-89f6-ba9d9648e44f) |
+|  Recommendation as instruction following: A large language model empowered recommendation approach     |   InstructRec    | arXiv23  |   采用instruction tuning，将主动的用户指令和被动的交互信息按照一定格式组织成指令，引导LLM完成多任务推荐场景          |![image](https://github.com/istarryn/LLM4REC/assets/149132603/69fb19c0-2473-4737-937d-4f5372877c70) |
+|  A bi-step grounding paradigm for large language models in recommendation systems     |   BIGRec    |  arXiv23  |    针对grounding问题，采用instruction-tuning，实现“Grounding Language Space to Recommendation Space”     |![image](https://github.com/istarryn/LLM4REC/assets/149132603/bb6708c0-faf0-4b60-bd59-10980a4db6b0) |
+| A Multi-facet Paradigm to Bridge Large Language Model and Recommendation      |   TransRec   | arXiv23    |  在Item indexing上，将ID, title和attribute都当成Item的facet；在generation grounding上，：将生成的identifiers与in-corpus 的每个item的identifiers取交集选出items    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/ec8971b3-a70f-4102-aefa-4eb41a9ebd43) |
+| CoLLM: Integrating Collaborative Embeddings into Large Language Models for Recommendation      |   CoLLM     |  arXiv23    |    将传统模型捕获的协作放到LLM的prompt中，并将其映射到最终的embedding空间     |![image](https://github.com/istarryn/LLM4REC/assets/149132603/77c1bbf2-9765-413e-ba69-bcd2b6fb6f8a) |
+| LlamaRec: Two-Stage Recommendation using Large Language Models for Ranking     |  LlamaRec    |  CIKM23    |  一般LLM生成推荐结果的推理成本很高，并且要进一步Grounding。LlamaRec利用一个verbalizer ，将LLM head的输出(即所有tokens的分数)转换为候选items的排名分数      |![image](https://github.com/istarryn/LLM4REC/assets/149132603/350fd16d-5a75-4d31-a9b9-9d4ee5aa92b4) |
+|  Large language models are zero-shot rankers for recommender systems   |        |   arXiv23   |     利用LLM对候选物品集合进行zero-shot排序        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/32a8ae0c-4536-40bf-a0c5-ad753400c068) |
+|   Language models as recommender systems: Evaluations and limitations    |    LMRecSys  | NeurIPS21     |   采用Prompt tuning的方法，将要预测的物品拆分成多个token，由LLM输出每个token的分布，最终进行推荐          |![image](https://github.com/istarryn/LLM4REC/assets/149132603/de08059f-a75b-47d9-bb12-4799b7ab06ca) |
+| Prompt learning for news recommendation    |  Prompt4NR    |  SIGIR23    | 设计离散、连续、混合提示模板，以及它们对应的答案空间。使用prompt ensembling组合效果最好的一组prompt模板             |![image](https://github.com/istarryn/LLM4REC/assets/149132603/4d2c8217-ea18-40af-bd57-660a80884900) |
+|  Prompt distillation for efficient llm-based recommendation     |  POD     | CIKM23     |     通过prompt learning学习作为前缀的连续prompt，将离散prompt信息蒸馏到连续prompt        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/892c0f54-730b-4a1c-bdde-da26a3cd67a6) |
+| Large Language Models as Zero-Shot Conversational Recommenders      |        |  CIKM23    |   使用具有代表性的大型语言模型在Zero-Shot下对会话推荐任务进行实证研究          |![image](https://github.com/istarryn/LLM4REC/assets/149132603/05dadeef-c3d5-4d71-b4d2-5a54f708746d) |
 ### Pipline Controller
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
-|   Recmind: Large language model powered agent for recommendation    |  Recmind      |  arXiv23    |   由LLM驱动的推荐Agent，可以推理、互动、记忆，提供精确的个性化推荐    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/97c194d5-fd08-4e60-9b9b-8bb33538084d)
- |
+|   Recmind: Large language model powered agent for recommendation    |  Recmind      |  arXiv23    |   由LLM驱动的推荐Agent，可以推理、互动、记忆，提供精确的个性化推荐    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/97c194d5-fd08-4e60-9b9b-8bb33538084d) |
 
