@@ -24,8 +24,7 @@
 ### Feature Encoder
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
-|   U-BERT: Pre-training user representations for improved recommendation    |   U-BERT     |   AAAI21   |    早期的工作，主要使用BERT编码评论文本         |![image](https://github.com/istarryn/LLM4REC/assets/149132603/61c9c5b1-74b1-4837-8ed8-2e0815e772b4)
- |
+|   U-BERT: Pre-training user representations for improved recommendation    |   U-BERT     |   AAAI21   |    早期的工作，主要使用BERT编码评论文本         |![image](https://github.com/istarryn/LLM4REC/assets/149132603/61c9c5b1-74b1-4837-8ed8-2e0815e772b4) |
 |   Towards universal sequence representation learning for recommender systems    |    UniSRec   |   KDD22   |     用BERT对item text信息进行编码，使用了parametric whitening        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/983492f4-c1c1-43fb-a61b-a3ed3410a8bb) |
 |   Learning vector-quantized item representation for transferable sequential recommenders    |    VQ-Rec    |  WWW23    |  首先将文本映射到一个离散索引向量（称为item code ）中，然后使用这些索引来查找code embedding table进行编码           |![image](https://github.com/istarryn/LLM4REC/assets/149132603/ffd44ae0-e85f-4982-9287-ad04ddfadd3c) |
 |  Recommender Systems with Generative Retrieval     |    TIGER   |   NIPS23   |使用LLM编码有意义的item ID，直接预测candidate IDs，进行端到端的generative retrieval             |![image](https://github.com/istarryn/LLM4REC/assets/149132603/529b6903-80b5-45ff-95c6-b58cb8b4d3d9) |
