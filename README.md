@@ -1,4 +1,4 @@
-# LLM4REC
+![image](https://github.com/istarryn/LLM4REC/assets/149132603/fd321f09-c602-43d5-86fc-1be33e701efe)# LLM4REC
 ## OVERVIEW
 1. Feature Engineering
 	- data augmentation
@@ -14,12 +14,12 @@
 	- pipline design
 	- CoT, ToT, SI
 ### Feature Engineering
-
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
 |   Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models    |   KAR     |   arXiv23   |     利用LLM的open-world knowledge扩充用户和物品的信息        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/2d2eea2e-c88e-4d9e-ab3e-7dc8f67c90fe)|
 |   A First Look at LLM-Powered Generative News Recommendation    |   ONCE(GENRE+DIRE)    |   arXiv23   |     对于开源LLM，利用它们作为特征编码器。对于闭源LLM，使用提示丰富训练数据        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/da1e9be8-d334-4240-8359-4deca3417c96) |
 |  LLMRec: Large Language Models with Graph Augmentation for Recommendation     |    LLMRec    |  WSDM24    |    利用LLM进行图数据增强，从item candidates中选出liked item和disliked item    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/d241c52f-611f-47bf-8fb4-7a5095b0a1f4) |
+|  Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation    |    Llama4Rec   |  arXiv24    |    由mutual augmentation和adaptive aggregation组成。mutual augmentation包括data增强和prompt增强。  |![image](https://github.com/istarryn/LLM4REC/assets/149132603/395b7bac-23c9-45cd-bfbd-6ceb463edb27) |
 
 ### Feature Encoder
 | Title | Model | Time | Motivation | Discription |
@@ -29,6 +29,7 @@
 |   Learning vector-quantized item representation for transferable sequential recommenders    |    VQ-Rec    |  WWW23    |  首先将文本映射到一个离散索引向量（称为item code ）中，然后使用这些索引来查找code embedding table进行编码           |![image](https://github.com/istarryn/LLM4REC/assets/149132603/ffd44ae0-e85f-4982-9287-ad04ddfadd3c) |
 |  Recommender Systems with Generative Retrieval     |    TIGER   |   NIPS23   |使用LLM编码有意义的item ID，直接预测candidate IDs，进行端到端的generative retrieval             |![image](https://github.com/istarryn/LLM4REC/assets/149132603/529b6903-80b5-45ff-95c6-b58cb8b4d3d9) |
 |  Representation Learning with Large Language Models for Recommendation     | RLMRec    |  arXiv23   |    通过两次对比学习，对齐LLM编码的语义特征和传统方法的协同特征         |![image](https://github.com/istarryn/LLM4REC/assets/149132603/a4c0366c-e6f1-483d-992b-49ae4ca8dbad) |
+
 ### Scoring/Ranking
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
@@ -51,8 +52,11 @@
 | Distillation is All You Need for Practically Using Different Pre-trained Recommendation Models    |  PRM-KD   |  arXiv24    | 利用了不同预训练推荐模型作为教师模型，进行联合知识蒸馏（选择性地将不同预训练推荐模型中提取的附加信息整合到新领域的各种类型的学生模型中）  |![image](https://github.com/istarryn/LLM4REC/assets/149132603/fa747624-cc5a-4c42-84f5-2b1679a9da1a)|
 |Adapting Large Language Models by Integrating Collaborative Semantics for Recommendation|LC-Rec |arXiv23 |对于item索引，设计了一种语义映射方法，可以为item分配有意义且不冲突的id，同时提出了一系列特别设计的tuning任务，迫使llm深度整合语言和协同过滤语义|![image](https://github.com/istarryn/LLM4REC/assets/149132603/73f5626e-2768-4b07-8599-5d0306c6d4ae)|
 |Preliminary Study on Incremental Learning for Large Language Model-based Recommender Systems|LSAT|arXiv23 |为LLM4Rec增量学习开发了一个长期和短期适应感知调优(LSAT)框架|![image](https://github.com/istarryn/LLM4REC/assets/149132603/8cfcd1a9-f561-4ee0-b476-10fca9c6de32)|
+|Collaborative Large Language Model for Recommender Systems|CLLM4Rec|arXiv23 |采用soft+hard的prompt，对单独的用户/物品特征和用户-物品历史交互建模| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/72044ed3-5b33-41b0-8e99-70cd62cfe9cb)|
+
 ### Pipline Controller
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
 |   Recmind: Large language model powered agent for recommendation    |  Recmind      |  arXiv23    |   由LLM驱动的推荐Agent，可以推理、互动、记忆，提供精确的个性化推荐    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/97c194d5-fd08-4e60-9b9b-8bb33538084d) |
+|   Can Small Language Models be Good Reasoners for Sequential Recommendation?    |  SLIM   |  WWW24  |   将大的LLM的逐步推理能力蒸馏到小的LLM中   | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/30e5222a-d8ba-4526-841c-ea3c56578279) |
 
