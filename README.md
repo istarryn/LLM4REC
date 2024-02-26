@@ -52,7 +52,7 @@
 | Distillation is All You Need for Practically Using Different Pre-trained Recommendation Models    |  PRM-KD   |  arXiv24    | 利用了不同预训练推荐模型作为教师模型，进行联合知识蒸馏（选择性地将不同预训练推荐模型中提取的附加信息整合到新领域的各种类型的学生模型中）  |![image](https://github.com/istarryn/LLM4REC/assets/149132603/fa747624-cc5a-4c42-84f5-2b1679a9da1a)|
 |Adapting Large Language Models by Integrating Collaborative Semantics for Recommendation|LC-Rec |arXiv23 |对于item索引，设计了一种语义映射方法，可以为item分配有意义且不冲突的id，同时提出了一系列特别设计的tuning任务，迫使llm深度整合语言和协同过滤语义|![image](https://github.com/istarryn/LLM4REC/assets/149132603/73f5626e-2768-4b07-8599-5d0306c6d4ae)|
 |Preliminary Study on Incremental Learning for Large Language Model-based Recommender Systems|LSAT|arXiv23 |为LLM4Rec增量学习开发了一个长期和短期适应感知调优(LSAT)框架|![image](https://github.com/istarryn/LLM4REC/assets/149132603/8cfcd1a9-f561-4ee0-b476-10fca9c6de32)|
-|Collaborative Large Language Model for Recommender Systems|CLLM4Rec|arXiv23 |采用soft+hard的prompt，对单独的用户/物品特征和用户-物品历史交互建模| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/72044ed3-5b33-41b0-8e99-70cd62cfe9cb)|
+|Collaborative Large Language Model for Recommender Systems|CLLM4Rec|WWW24 |采用soft+hard的prompt，对单独的用户/物品特征和用户-物品历史交互建模| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/72044ed3-5b33-41b0-8e99-70cd62cfe9cb)|
 
 ### Pipline Controller
 | Title | Model | Time | Motivation | Discription |
