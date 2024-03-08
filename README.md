@@ -20,6 +20,7 @@
 |   A First Look at LLM-Powered Generative News Recommendation    |   ONCE(GENRE+DIRE)    |   arXiv23   |     对于开源LLM，利用它们作为特征编码器。对于闭源LLM，使用提示丰富训练数据        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/da1e9be8-d334-4240-8359-4deca3417c96) |
 |  LLMRec: Large Language Models with Graph Augmentation for Recommendation     |    LLMRec    |  WSDM24    |    利用LLM进行图数据增强，从item candidates中选出liked item和disliked item    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/d241c52f-611f-47bf-8fb4-7a5095b0a1f4) |
 |  Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation    |    Llama4Rec   |  arXiv24    |    由mutual augmentation和adaptive aggregation组成。mutual augmentation包括data增强和prompt增强。  |![image](https://github.com/istarryn/LLM4REC/assets/149132603/395b7bac-23c9-45cd-bfbd-6ceb463edb27) |
+|  Data-efficient Fine-tuning for LLM-based Recommendation    |    DEALRec   |  arXiv24    |  设计influence score和effort score，对LLM4REC进行数据蒸馏，挑选出有influential的samples  |![image](https://github.com/istarryn/LLM4REC/assets/149132603/6a7b308c-090d-475d-b272-19243c3bd44c)|
 
 ### Feature Encoder
 | Title | Model | Time | Motivation | Discription |
