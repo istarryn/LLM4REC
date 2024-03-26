@@ -21,6 +21,10 @@
 |  LLMRec: Large Language Models with Graph Augmentation for Recommendation     |    LLMRec    |  WSDM24    |    利用LLM进行图数据增强，从item candidates中选出liked item和disliked item    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/d241c52f-611f-47bf-8fb4-7a5095b0a1f4) |
 |  Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation    |    Llama4Rec   |  arXiv24    |    由mutual augmentation和adaptive aggregation组成。mutual augmentation包括data增强和prompt增强。  |![image](https://github.com/istarryn/LLM4REC/assets/149132603/395b7bac-23c9-45cd-bfbd-6ceb463edb27) |
 |  Data-efficient Fine-tuning for LLM-based Recommendation    |    DEALRec   |  arXiv24    |  设计influence score和effort score，对LLM4REC进行数据蒸馏，挑选出有influential的samples  |![image](https://github.com/istarryn/LLM4REC/assets/149132603/6a7b308c-090d-475d-b272-19243c3bd44c)|
+| Distillation is All You Need for Practically Using Different Pre-trained Recommendation Models | |arXiv24|利用了不同类型的预训练推荐模型作为教师模型，提取in-batch negative item scores进行联合知识蒸馏|![image](https://github.com/istarryn/LLM4REC/assets/149132603/981489e3-b420-4f8a-99b0-9a36706b0fcb)|
+
+
+
 
 ### Feature Encoder
 | Title | Model | Time | Motivation | Discription |
@@ -54,10 +58,18 @@
 |Adapting Large Language Models by Integrating Collaborative Semantics for Recommendation|LC-Rec |arXiv23 |对于item索引，设计了一种语义映射方法，可以为item分配有意义且不冲突的id，同时提出了一系列特别设计的tuning任务，迫使llm深度整合语言和协同过滤语义|![image](https://github.com/istarryn/LLM4REC/assets/149132603/73f5626e-2768-4b07-8599-5d0306c6d4ae)|
 |Preliminary Study on Incremental Learning for Large Language Model-based Recommender Systems|LSAT|arXiv23 |为LLM4Rec增量学习开发了一个长期和短期适应感知调优(LSAT)框架|![image](https://github.com/istarryn/LLM4REC/assets/149132603/8cfcd1a9-f561-4ee0-b476-10fca9c6de32)|
 |Collaborative Large Language Model for Recommender Systems|CLLM4Rec|WWW24 |采用soft+hard的prompt，对单独的用户/物品特征和用户-物品历史交互建模| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/72044ed3-5b33-41b0-8e99-70cd62cfe9cb)|
+|Adapting Large Language Models by Integrating Collaborative Semantics for Recommendation| |arXiv23|为item分配有意义且不冲突的id，同时提出了一系列特别设计的tuning任务，迫使llm深度整合语言和协同过滤语义（学习出的item id）|![image](https://github.com/istarryn/LLM4REC/assets/149132603/f3908ad8-5e01-4122-9382-3708e61f25a6)|
 
 ### Pipline Controller
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
 |   Recmind: Large language model powered agent for recommendation    |  Recmind      |  arXiv23    |   由LLM驱动的推荐Agent，可以推理、互动、记忆，提供精确的个性化推荐    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/97c194d5-fd08-4e60-9b9b-8bb33538084d) |
 |   Can Small Language Models be Good Reasoners for Sequential Recommendation?    |  SLIM   |  WWW24  |   将大的LLM的逐步推理能力蒸馏到小的LLM中   | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/30e5222a-d8ba-4526-841c-ea3c56578279) |
+|Preliminary Study on Incremental Learning for Large Language Model-based Recommender Systems| |arXiv23|实验发现full retraining and fine-tuning增量学习都没有显著提高LLM4Rec的性能，设计long term lora(freeze)和short term lora(hot)分别关注user长短期偏好|![image](https://github.com/istarryn/LLM4REC/assets/149132603/dfde5894-f18e-453e-a0d0-4fa615309074)|
+|Scaling Law of Large Sequential Recommendation Models| | arXiv23 |实验发现，扩大模型大小可以极大地提高具有挑战性的推荐任务上(如冷启动、鲁棒性、长期偏好)的性能|![image](https://github.com/istarryn/LLM4REC/assets/149132603/daee6696-aa64-499c-b83d-98b355ac8dae)|
+
+
+
+![image](https://github.com/istarryn/LLM4REC/assets/149132603/14a0af0e-35f4-49fe-8616-a748778e6ceb)
+
 
