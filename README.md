@@ -13,6 +13,7 @@
 4. Pipline Controller
 	- pipline design
 	- CoT, ToT, SI
+ 	- Incremental Learning 
 ### Feature Engineering
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
@@ -68,8 +69,5 @@
 |Preliminary Study on Incremental Learning for Large Language Model-based Recommender Systems| |arXiv23|实验发现full retraining and fine-tuning增量学习都没有显著提高LLM4Rec的性能，设计long term lora(freeze)和short term lora(hot)分别关注user长短期偏好|![image](https://github.com/istarryn/LLM4REC/assets/149132603/dfde5894-f18e-453e-a0d0-4fa615309074)|
 |Scaling Law of Large Sequential Recommendation Models| | arXiv23 |实验发现，扩大模型大小可以极大地提高具有挑战性的推荐任务上(如冷启动、鲁棒性、长期偏好)的性能|![image](https://github.com/istarryn/LLM4REC/assets/149132603/daee6696-aa64-499c-b83d-98b355ac8dae)|
 
-
-
-![image](https://github.com/istarryn/LLM4REC/assets/149132603/14a0af0e-35f4-49fe-8616-a748778e6ceb)
 
 
