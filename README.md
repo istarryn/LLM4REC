@@ -55,11 +55,9 @@
 | Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agents     |        |  arXiv23    |   利用GPT模型进行文本排序任务，将GPT模型的标注结果用于模型蒸馏    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/265a4ae2-3627-4d98-9ff8-473ec5fd8626) |
 | LLaRA: Aligning Large Language Models with Sequential Recommenders    |  LLaRA  |  arXiv23    |   在prompt中采用文本表征+传统模型学习的混合表征    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/cd1a24be-923e-4fb1-8540-13b70b942a9e)|
 | Collaborative Contextualization: Bridging the Gap between Collaborative Filtering and Pre-trained Language Model     |  CollabContext  |  arXiv23    |   利用LLM学习到的文本表征和传统模型表征进行双向蒸馏    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/810425d8-65f4-4883-b1b8-021bb6ff6e03)|
-| Distillation is All You Need for Practically Using Different Pre-trained Recommendation Models    |  PRM-KD   |  arXiv24    | 利用了不同预训练推荐模型作为教师模型，进行联合知识蒸馏（选择性地将不同预训练推荐模型中提取的附加信息整合到新领域的各种类型的学生模型中）  |![image](https://github.com/istarryn/LLM4REC/assets/149132603/fa747624-cc5a-4c42-84f5-2b1679a9da1a)|
 |Adapting Large Language Models by Integrating Collaborative Semantics for Recommendation|LC-Rec |arXiv23 |对于item索引，设计了一种语义映射方法，可以为item分配有意义且不冲突的id，同时提出了一系列特别设计的tuning任务，迫使llm深度整合语言和协同过滤语义|![image](https://github.com/istarryn/LLM4REC/assets/149132603/73f5626e-2768-4b07-8599-5d0306c6d4ae)|
-|Preliminary Study on Incremental Learning for Large Language Model-based Recommender Systems|LSAT|arXiv23 |为LLM4Rec增量学习开发了一个长期和短期适应感知调优(LSAT)框架|![image](https://github.com/istarryn/LLM4REC/assets/149132603/8cfcd1a9-f561-4ee0-b476-10fca9c6de32)|
 |Collaborative Large Language Model for Recommender Systems|CLLM4Rec|WWW24 |采用soft+hard的prompt，对单独的用户/物品特征和用户-物品历史交互建模| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/72044ed3-5b33-41b0-8e99-70cd62cfe9cb)|
-|Adapting Large Language Models by Integrating Collaborative Semantics for Recommendation| |arXiv23|为item分配有意义且不冲突的id，同时提出了一系列特别设计的tuning任务，迫使llm深度整合语言和协同过滤语义（学习出的item id）|![image](https://github.com/istarryn/LLM4REC/assets/149132603/f3908ad8-5e01-4122-9382-3708e61f25a6)|
+
 
 ### Pipline Controller
 | Title | Model | Time | Motivation | Discription |
