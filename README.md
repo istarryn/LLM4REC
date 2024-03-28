@@ -22,7 +22,7 @@
 |  LLMRec: Large Language Models with Graph Augmentation for Recommendation     |    LLMRec    |  WSDM24    |    利用LLM进行图数据增强，从item candidates中选出liked item和disliked item    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/d241c52f-611f-47bf-8fb4-7a5095b0a1f4) |
 |  Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation    |    Llama4Rec   |  arXiv24    |    由mutual augmentation和adaptive aggregation组成。mutual augmentation包括data增强和prompt增强。  |![image](https://github.com/istarryn/LLM4REC/assets/149132603/395b7bac-23c9-45cd-bfbd-6ceb463edb27) |
 |  Data-efficient Fine-tuning for LLM-based Recommendation    |    DEALRec   |  arXiv24    |  设计influence score和effort score，对LLM4REC进行数据蒸馏，挑选出有influential的samples  |![image](https://github.com/istarryn/LLM4REC/assets/149132603/6a7b308c-090d-475d-b272-19243c3bd44c)|
-| Distillation is All You Need for Practically Using Different Pre-trained Recommendation Models | |arXiv24|利用了不同类型的预训练推荐模型作为教师模型，提取in-batch negative item scores进行联合知识蒸馏|![image](https://github.com/istarryn/LLM4REC/assets/149132603/981489e3-b420-4f8a-99b0-9a36706b0fcb)|
+| Distillation is All You Need for Practically Using Different Pre-trained Recommendation Models |PRM-KD |arXiv24|利用了不同类型的预训练推荐模型作为教师模型，提取in-batch negative item scores进行联合知识蒸馏|![image](https://github.com/istarryn/LLM4REC/assets/149132603/981489e3-b420-4f8a-99b0-9a36706b0fcb)|
 
 
 
