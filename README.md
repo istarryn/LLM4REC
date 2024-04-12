@@ -11,8 +11,8 @@
 3. Scoring/Ranking
 	- prompt learning 
 	- instruction tuning
-4. Pipline Controller
-	- pipline design
+4. Pipeline Controller
+	- pipeline design
 	- CoT, ToT, SI
  	- Incremental Learning 
 ### Feature Engineering
