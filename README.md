@@ -50,7 +50,7 @@
 |   Learning vector-quantized item representation for transferable sequential recommenders    |    VQ-Rec    |  WWW23    |  首先将文本映射到一个离散索引向量（称为item code ）中，然后使用这些索引来查找code embedding table进行编码           |![image](https://github.com/istarryn/LLM4REC/assets/149132603/ffd44ae0-e85f-4982-9287-ad04ddfadd3c) |
 |  Recommender Systems with Generative Retrieval     |    TIGER   |   NIPS23   |使用LLM编码有意义的item ID，直接预测candidate IDs，进行端到端的generative retrieval             |![image](https://github.com/istarryn/LLM4REC/assets/149132603/529b6903-80b5-45ff-95c6-b58cb8b4d3d9) |
 |  Representation Learning with Large Language Models for Recommendation     | RLMRec    |  WWW24  |    通过两次对比学习，对齐LLM编码的语义特征和传统方法的协同特征         |![image](https://github.com/istarryn/LLM4REC/assets/149132603/a4c0366c-e6f1-483d-992b-49ae4ca8dbad) |
-| Rella: Retrieval-enhanced large language models for lifelong sequential behavior comprehension in recommendation | WWW24 | ReLLa | CTR问题，LLM对于长的序列效果不佳；本文根据target item从长序列中选择相似的部分item作为序列；item的embedding通过LLM对text信息进行构建 | <img width="308" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/9e0883fb-4681-4de4-8677-f25c9b5ef16d"> |
+| Rella: Retrieval-enhanced large language models for lifelong sequential behavior comprehension in recommendation | ReLLa | WWW24 | CTR问题，LLM对于长的序列效果不佳；本文根据target item从长序列中选择相似的部分item作为序列；item的embedding通过LLM对text信息进行构建 | <img width="308" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/9e0883fb-4681-4de4-8677-f25c9b5ef16d"> |
 
 
 ### Scoring/Ranking
