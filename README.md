@@ -27,6 +27,8 @@
 | CoRAL: Collaborative Retrieval-Augmented Large Language Models Improve Long-tail Recommendation | CoRAL | arXiv24 | 通过强化学习，将协同信息以prompt的形式增强LLM，实现对于Long-tail Recommendation推荐性能的改进|![image](https://github.com/istarryn/LLM4REC/assets/149132603/ef14e721-86cf-4946-9cca-707a0f6e6eb1)|
 | Harnessing Large Language Models for Text-Rich Sequential Recommendation | |arXiv24|关注LLM4REC的数据压缩问题，先将用户历史交互分片，然后用LLM总结每个分片的内容，最后设计prompt将总结后的user偏好、最近user交互和candidate items结合在一起|![image](https://github.com/istarryn/LLM4REC/assets/149132603/4d3a8083-c269-4086-9250-2d515cd16738)|
 | Large Language Models Enhanced Collaborative Filtering |LLM-CF|arXiv24|通过ICL和COT，将LLM的world knowledge和reasoning capabilities蒸馏到collaborative filtering|![image](https://github.com/istarryn/LLM4REC/assets/149132603/bf79cde0-f342-49c5-a3e7-e9e94eb9051f)|
+| Re2LLM: Reflective Reinforcement Large Language Model for Session-based Recommendation | Re2LLM | arXiv24 | 利用LLM的self-reflection生成hint，筛选有价值和非冗余的hint添加至hint知识库，再用强化学习挑选hint，作为LLM推荐的辅助信息 |![image](https://github.com/istarryn/LLM4REC/assets/105367602/27a65fd4-9b1b-423a-8d95-5d689eee01d7)|
+| Reinforcement Learning-based Recommender Systems with Large Language Models for State Reward and Action Modeling | LEASR | arXiv24 | 利用LLM生成state和reward，并进行数据增强，辅助监督强化学习算法SNQN和SA2C的训练 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/388dd659-e869-4fee-bd4d-1cc2c6378e5c)
 
 
 
