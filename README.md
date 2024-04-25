@@ -42,6 +42,10 @@
 
 
 
+
+
+
+
 ### Feature Encoder
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
@@ -51,6 +55,25 @@
 |  Recommender Systems with Generative Retrieval     |    TIGER   |   NIPS23   |使用LLM编码有意义的item ID，直接预测candidate IDs，进行端到端的generative retrieval             |![image](https://github.com/istarryn/LLM4REC/assets/149132603/529b6903-80b5-45ff-95c6-b58cb8b4d3d9) |
 |  Representation Learning with Large Language Models for Recommendation     | RLMRec    |  WWW24  |    通过两次对比学习，对齐LLM编码的语义特征和传统方法的协同特征         |![image](https://github.com/istarryn/LLM4REC/assets/149132603/a4c0366c-e6f1-483d-992b-49ae4ca8dbad) |
 | Rella: Retrieval-enhanced large language models for lifelong sequential behavior comprehension in recommendation | ReLLa | WWW24 | CTR问题，LLM对于长的序列效果不佳；本文根据target item从长序列中选择相似的部分item作为序列；item的embedding通过LLM对text信息进行构建 | <img width="308" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/9e0883fb-4681-4de4-8677-f25c9b5ef16d"> |
+| Breaking the Length Barrier: LLM-Enhanced CTR Prediction in Long Textual User Behaviors | BAHE | SIGIR24 short paper | 长序列LLM推理开销大。本文思路是固定LLM的浅层参数，预先存储一些原子交互的LLM的浅层特征，后续直接查表 | <img width="327" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/66b18e3d-be51-42ee-98b4-ec6b35f0f973"> |
+| Large Language Models Augmented Rating Prediction in Recommender System | LLM-TRSR | ICASSP24 | ensemble LLM_Rec和传统Rec的输出 | <img width="613" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/87dac872-f67c-40db-9a5e-d33c164564d3"> |
+| Enhancing Content-based Recommendation via Large Language Model | LOID | arxiv24 short paper | 不同domain的content语义信息之间可能有gap；同时利用LLM和传统RS的信息，提出一种ID和content信息align的范式。用ID embedding作为key提取text embedding序列当中的信息 | <img width="444" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/b0ddb95f-2e46-48ae-9575-bf55053f7828">
+| Aligning Large Language Models with Recommendation Knowledge |  | arxiv24 | 将推荐领域的一些知识，例如MIM和BPR，通过prompt的形式将其传输给LLM | <img width="270" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/49c95f93-0676-4ad3-a24d-8c12c56a3ed3"> |
+| The Elephant in the Room: Rethinking the Usage of Pre-trained Language Model in Sequential Recommendation | Elephant in the Room | arxiv24 | 序列推荐的大模型的attention层的大部分参数都没有被使用，参数存在大量的冗余。本文将LLM学到的item embedding作为SASRec的初始化，然后再训练SASRec | <img width="378" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/21a58739-d184-4f4b-b3b8-f8f832e76122"> |
+| Demystifying Embedding Spaces using Large Language Models |  | ICLR24 | 用LLM对item的embedding空间进行解释，包括未在训练数据中出现过的item | <img width="357" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/39361365-f2de-4f50-a1fe-714ac0450cc4"> |
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Scoring/Ranking
@@ -70,7 +93,7 @@
 | Large Language Models as Zero-Shot Conversational Recommenders      |        |  CIKM23    |   使用具有代表性的大型语言模型在Zero-Shot下对会话推荐任务进行实证研究          |![image](https://github.com/istarryn/LLM4REC/assets/149132603/05dadeef-c3d5-4d71-b4d2-5a54f708746d) |
 | Leveraging Large Language Models (LLMs) to Empower Training-Free Dataset Condensation for Content-Based Recommendation     |        |  arXiv23    |   对推荐数据进行蒸馏，设计prompt，用LLM压缩item的信息、提取user偏好，聚类并计算距离选择top-m的user，并产生交互数据    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/ffcc1950-3257-426b-9a2d-518e44d63503) |
 | Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agents     |        |  arXiv23    |   利用GPT模型进行文本排序任务，将GPT模型的标注结果用于模型蒸馏    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/265a4ae2-3627-4d98-9ff8-473ec5fd8626) |
-| LLaRA: Aligning Large Language Models with Sequential Recommenders    |  LLaRA  |  arXiv23    |   在prompt中采用文本表征+传统模型学习的混合表征    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/cd1a24be-923e-4fb1-8540-13b70b942a9e)|
+| LLaRA: Aligning Large Language Models with Sequential Recommenders | LLaRA  |  arXiv23    |   在prompt中采用文本表征+传统模型学习的混合表征    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/cd1a24be-923e-4fb1-8540-13b70b942a9e)|
 | Collaborative Contextualization: Bridging the Gap between Collaborative Filtering and Pre-trained Language Model     |  CollabContext  |  arXiv23    |   利用LLM学习到的文本表征和传统模型表征进行双向蒸馏    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/810425d8-65f4-4883-b1b8-021bb6ff6e03)|
 |Adapting Large Language Models by Integrating Collaborative Semantics for Recommendation|LC-Rec |arXiv23 |对于item索引，设计了一种语义映射方法，可以为item分配有意义且不冲突的id，同时提出了一系列特别设计的tuning任务，迫使llm深度整合语言和协同过滤语义|![image](https://github.com/istarryn/LLM4REC/assets/149132603/73f5626e-2768-4b07-8599-5d0306c6d4ae)|
 | Collaborative Large Language Model for Recommender Systems| CLLM4Rec| WWW24 | 为了减少自然语言和推荐语义的gap，本文为user和item扩充词表使其与唯一的token绑定，并引入协同信号进行训练扩充的token的embedding | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/72044ed3-5b33-41b0-8e99-70cd62cfe9cb)|
