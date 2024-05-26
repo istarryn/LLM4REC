@@ -5,6 +5,7 @@
 		- get open-world knowledge for user/item
 		- generate interaction data
   	- data condense
+   	- knowledge distillation 
 2. Feature Encoder
 	- encode text information
 	- encode id information
