@@ -34,8 +34,7 @@
 | Harnessing Large Language Models for Text-Rich Sequential Recommendation | |arXiv24|关注LLM4REC的数据压缩问题，先将用户历史交互分片，然后用LLM总结每个分片的内容，最后设计prompt将总结后的user偏好、最近user交互和candidate items结合在一起|![image](https://github.com/istarryn/LLM4REC/assets/149132603/4d3a8083-c269-4086-9250-2d515cd16738)|
 | Large Language Models Enhanced Collaborative Filtering |LLM-CF|arXiv24|通过ICL和COT，将LLM的world knowledge和reasoning capabilities蒸馏到collaborative filtering|![image](https://github.com/istarryn/LLM4REC/assets/149132603/bf79cde0-f342-49c5-a3e7-e9e94eb9051f)|
 | Optimization Methods for Personalizing Large Language Models through Retrieval Augmentation | | SIGIR24 | LLMs不能根据其用户的背景和历史偏好定制其生成的输出,通过强化学习+知识蒸馏选择最能增强LLM的个人信息 | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/42f3cff0-3569-40be-b183-79b29464deb6) |
-| Large Language Models for Next Point-of-Interest Recommendation | | SIGIR24 | 现有的next POI方法侧重于短轨迹和冷启动问题（数据量少且轨迹短的用户），没有充分探索丰富的LBSN的数据
-;可以使用LLM的自然语言理解能力，来处理所有类型的LBSN数据并更好地使用上下文信息 | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/ffc1b435-34bd-4483-aa5f-dc5d313f2882) |
+| Large Language Models for Next Point-of-Interest Recommendation | | SIGIR24 | 现有的next POI方法侧重于短轨迹和冷启动问题（数据量少且轨迹短的用户），没有充分探索丰富的LBSN的数据,可以使用LLM的自然语言理解能力，来处理所有类型的LBSN数据并更好地使用上下文信息 | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/ffc1b435-34bd-4483-aa5f-dc5d313f2882) |
 
 
 ### Feature Encoder
