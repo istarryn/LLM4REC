@@ -101,10 +101,12 @@
 | SELF-INSTRUCT: Aligning Language Models with Self-Generated Instructions | SELF-INSTRUCT | arXiv22 | 对于指令微调，人类编写的指令数据开销大，多样性有限、不能推广到广泛的场景；可以让LLM自己产生指令| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/fff27b3d-90ca-4c4b-98cd-dc811334611f)|
 | Principle-Driven Self-Alignment of Language Models from Scratch with Minimal Human Supervision | | arXiv24 | 人类注释的监督微调(SFT)和来自人类反馈的强化学习(RLHF)有成本高，可靠性、多样性参差不齐等问题;可以将原则驱动推理和LLM的生成能力结合起来，在最少的人类监督下实现人工智能agent的自对齐| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/30381c3c-dbe7-4cc1-8404-e6dbe16ae299)|
 | RLCD: REINFORCEMENT LEARNING FROM CONTRASTIVE DISTILLATION FOR LM ALIGNMENT| RLCD | arXiv24 | 设计对比学习，在不使用人类反馈的情况下，使语言模型遵循自然语言表达的原则的方法产生指令(从模型输出中创建偏好对，一个旨在鼓励遵循给定原则的积极提示，另一个旨在鼓励违反原则的消极提示) | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/6b576c9e-21b8-45fb-a348-1047e9d7f938)|
-
-
-
-
+| Impossible Distillation for Paraphrasing and Summarization: How to Make High-quality Lemonade out of Small, Low-quality Models| | arXiv23 | 从低质量教师模型（本身不能执行某些特定任务任务的模型）提取出高质量的数据集和模型,最后，学生LM通过自我蒸馏进一步完善（在自己的高质量数据上进行训练）| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/d0236de9-b876-4552-8573-07e7a0e49200)|
+| LARGE LANGUAGE MODELS CAN SELF-IMPROVE | | arXiv23 | 微调LLM需要大量有监督数据，而人类的反思不需要外部输入；可以让LLM通过unlabeled数据进行反思;通过Chain-of-Thought prompting 和 self-consistency 让LLM产生“high-confidence” 的回答 | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/274a2c13-810b-4e2f-a0a7-62d3980fd655) |
+| Reinforced Self-Training (ReST) for Language Modeling | ReST | arXiv23 | RLHF通过将LLM和人类偏好对齐来提升LLM的能力，它采用的在线训练策略在处理新的样本时开销大；可以采用离线强化学习来解决这个问题（时间问题）；离线的强化学习的质量很大程度上取决于数据集的质量，需要得到高质量的离线数据集（提升有效性）| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/c812024d-7c11-40db-8464-ec19c3151658) |
+| Self-Rewarding Language Models | | arXiv24 | 目前的RLHF根据人类偏好来训练奖励模型，这受到人类表现水平的显示；其次这些冻结的奖励模型无法在LLM训练的过程中学习改进；需要让LLM自动修改奖励函数，并且在训练的过程中自动改进 | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/4b06b606-dcfd-49ce-b954-2426941b35d8)|
+| Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on Self-Chat Data | Baize | arXiv23 | 目前具备强大能力的聊天模型如ChatGPT访问经常受限（只能通过API访问），希望能够训练一个能力接近ChatGPT的开源模型；为了让开源LLM的聊天能力接近ChatGPT，需要为开源LLM提供高质量的训练数据；通过利用ChatGPT与自己进行对话，可以自动生成高质量的多回合聊天语料库；提出带有反馈的自蒸馏，以进一步提高带有ChatGPT反馈的Baize模型的性能| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/2b0869b7-27e5-43c9-ba98-6164e1183836)|
+| STaR: Self-Taught Reasoner Bootstrapping Reasoning With Reasoning |  STaR | arXiv22 | 思维链能够提升LLM在复杂推理场景的表现，但是这类方法有个缺点：它们要么需要大量的思维链数据，开销很大；要么只使用少量的思维连数据，损失了一部分推理的能力；希望LLM学习自己生成的rationale来提升推理能力，但自己生成的rationale可能是错误的answer，需要修正| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/3bf3a853-e292-4180-b966-23e3fc66e067) |
 
 
 
