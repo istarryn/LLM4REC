@@ -16,6 +16,9 @@
 	- pipeline design
 	- CoT, ToT, SI
  	- Incremental Learning
+5. Other Related work
+	- Self-distillation in LLM
+ 	- Reinforce Learning in LLM
 
 ### Feature Engineering
 | Title | Model | Time | Motivation | Discription |
@@ -91,4 +94,21 @@
 |Scaling Law of Large Sequential Recommendation Models| | arXiv23 |实验发现，扩大模型大小可以极大地提高具有挑战性的推荐任务上(如冷启动、鲁棒性、长期偏好)的性能|![image](https://github.com/istarryn/LLM4REC/assets/149132603/daee6696-aa64-499c-b83d-98b355ac8dae)|
 
 
+### Other Related work
+#### Self-distillation in LLM
+| Title | Model | Time | Motivation | Discription |
+|:-------:|:-------:|:-------:|:-------:|:-------:|
+| SELF-INSTRUCT: Aligning Language Models with Self-Generated Instructions | SELF-INSTRUCT | arXiv22 | 对于指令微调，人类编写的指令数据开销大，多样性有限、不能推广到广泛的场景；可以让LLM自己产生指令| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/fff27b3d-90ca-4c4b-98cd-dc811334611f)|
+| Principle-Driven Self-Alignment of Language Models from Scratch with Minimal Human Supervision | | arXiv24 | 人类注释的监督微调(SFT)和来自人类反馈的强化学习(RLHF)有成本高，可靠性、多样性参差不齐等问题;可以将原则驱动推理和LLM的生成能力结合起来，在最少的人类监督下实现人工智能agent的自对齐| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/30381c3c-dbe7-4cc1-8404-e6dbe16ae299)|
+| RLCD: REINFORCEMENT LEARNING FROM CONTRASTIVE DISTILLATION FOR LM ALIGNMENT| RLCD | arXiv24 | 设计对比学习，在不使用人类反馈的情况下，使语言模型遵循自然语言表达的原则的方法产生指令(从模型输出中创建偏好对，一个旨在鼓励遵循给定原则的积极提示，另一个旨在鼓励违反原则的消极提示) | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/6b576c9e-21b8-45fb-a348-1047e9d7f938)|
 
+
+
+
+
+
+
+
+#### Reinforce Learning in LLM
+| Title | Model | Time | Motivation | Discription |
+|:-------:|:-------:|:-------:|:-------:|:-------:|
