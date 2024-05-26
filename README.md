@@ -107,6 +107,9 @@
 | Self-Rewarding Language Models | | arXiv24 | 目前的RLHF根据人类偏好来训练奖励模型，这受到人类表现水平的显示；其次这些冻结的奖励模型无法在LLM训练的过程中学习改进；需要让LLM自动修改奖励函数，并且在训练的过程中自动改进 | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/4b06b606-dcfd-49ce-b954-2426941b35d8)|
 | Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on Self-Chat Data | Baize | arXiv23 | 目前具备强大能力的聊天模型如ChatGPT访问经常受限（只能通过API访问），希望能够训练一个能力接近ChatGPT的开源模型；为了让开源LLM的聊天能力接近ChatGPT，需要为开源LLM提供高质量的训练数据；通过利用ChatGPT与自己进行对话，可以自动生成高质量的多回合聊天语料库；提出带有反馈的自蒸馏，以进一步提高带有ChatGPT反馈的Baize模型的性能| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/2b0869b7-27e5-43c9-ba98-6164e1183836)|
 | STaR: Self-Taught Reasoner Bootstrapping Reasoning With Reasoning |  STaR | arXiv22 | 思维链能够提升LLM在复杂推理场景的表现，但是这类方法有个缺点：它们要么需要大量的思维链数据，开销很大；要么只使用少量的思维连数据，损失了一部分推理的能力；希望LLM学习自己生成的rationale来提升推理能力，但自己生成的rationale可能是错误的answer，需要修正| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/3bf3a853-e292-4180-b966-23e3fc66e067) |
+| Self-Distillation Bridges Distribution Gap in Language Model Fine-Tuning | | arXiv24 | 为特定任务对LLM进行微调通常会面临一个挑战：平衡对特定任务性能和对一般任务指令的遵循能力；
+让LLM重写特定任务的response，来减少两种分布之间的gap | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/43606734-793d-4a49-ac1c-b4b6751b7711) |
+ 
 
 
 
