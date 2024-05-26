@@ -11,10 +11,12 @@
 3. Scoring/Ranking
 	- prompt learning 
 	- instruction tuning
+ 	- reinforce learning
 4. Pipeline Controller
 	- pipeline design
 	- CoT, ToT, SI
- 	- Incremental Learning 
+ 	- Incremental Learning
+
 ### Feature Engineering
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
@@ -27,23 +29,9 @@
 | CoRAL: Collaborative Retrieval-Augmented Large Language Models Improve Long-tail Recommendation | CoRAL | arXiv24 | 通过强化学习，将协同信息以prompt的形式增强LLM，实现对于Long-tail Recommendation推荐性能的改进|![image](https://github.com/istarryn/LLM4REC/assets/149132603/ef14e721-86cf-4946-9cca-707a0f6e6eb1)|
 | Harnessing Large Language Models for Text-Rich Sequential Recommendation | |arXiv24|关注LLM4REC的数据压缩问题，先将用户历史交互分片，然后用LLM总结每个分片的内容，最后设计prompt将总结后的user偏好、最近user交互和candidate items结合在一起|![image](https://github.com/istarryn/LLM4REC/assets/149132603/4d3a8083-c269-4086-9250-2d515cd16738)|
 | Large Language Models Enhanced Collaborative Filtering |LLM-CF|arXiv24|通过ICL和COT，将LLM的world knowledge和reasoning capabilities蒸馏到collaborative filtering|![image](https://github.com/istarryn/LLM4REC/assets/149132603/bf79cde0-f342-49c5-a3e7-e9e94eb9051f)|
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Optimization Methods for Personalizing Large Language Models through Retrieval Augmentation | | SIGIR24 | LLMs不能根据其用户的背景和历史偏好定制其生成的输出,通过强化学习+知识蒸馏选择最能增强LLM的个人信息 | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/42f3cff0-3569-40be-b183-79b29464deb6) |
+| Large Language Models for Next Point-of-Interest Recommendation | | SIGIR24 | 现有的next POI方法侧重于短轨迹和冷启动问题（数据量少且轨迹短的用户），没有充分探索丰富的LBSN的数据
+;可以使用LLM的自然语言理解能力，来处理所有类型的LBSN数据并更好地使用上下文信息 | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/ffc1b435-34bd-4483-aa5f-dc5d313f2882) |
 
 
 ### Feature Encoder
@@ -61,18 +49,6 @@
 | Aligning Large Language Models with Recommendation Knowledge |  | arxiv24 | 将推荐领域的一些知识，例如MIM和BPR，通过prompt的形式将其传输给LLM | <img width="270" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/49c95f93-0676-4ad3-a24d-8c12c56a3ed3"> |
 | The Elephant in the Room: Rethinking the Usage of Pre-trained Language Model in Sequential Recommendation | Elephant in the Room | arxiv24 | 序列推荐的大模型的attention层的大部分参数都没有被使用，参数存在大量的冗余。本文将LLM学到的item embedding作为SASRec的初始化，然后再训练SASRec | <img width="378" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/21a58739-d184-4f4b-b3b8-f8f832e76122"> |
 | Demystifying Embedding Spaces using Large Language Models |  | ICLR24 | 用LLM对item的embedding空间进行解释，包括未在训练数据中出现过的item | <img width="357" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/39361365-f2de-4f50-a1fe-714ac0450cc4"> |
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -99,6 +75,9 @@
 | Collaborative Large Language Model for Recommender Systems| CLLM4Rec| WWW24 | 为了减少自然语言和推荐语义的gap，本文为user和item扩充词表使其与唯一的token绑定，并引入协同信号进行训练扩充的token的embedding | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/72044ed3-5b33-41b0-8e99-70cd62cfe9cb)|
 | Play to Your Strengths: Collaborative Intelligence of Conventional Recommender Models and Large Language Models | Play to Your Strength | arxiv24.3 | CTR task；由于LLM inference时间过长，且传统RS和LLM RS擅长不同的数据，本文考虑对不同数据分别使用传统RS和LLM进行推荐。方法是将传统RS confidence低的sample丢给LLM RS判断 | <img width="359" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/c8fa5ae1-331c-4fc5-affd-c58715e1d5b0"> |
 |GPT4Rec: A generative framework for personalized recommendation and user interests interpretation|GPT4Rec| arxiv23 | 用GPT2根据历史交互产生query，在BM25中检索item | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/82808d6d-5a7c-409c-a8ec-42e626fa95e1) |
+| Unsupervised large Language Model Alignment for Information Retrieval via Contrastive Feedback | | SIGIR24 | LLMs产生的responses不能捕捉内容相似的document之间的区别,设计group-wise的方法产生反馈信号，用无监督学习+强化学习，使LLMs产生context-specific的responses| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/0d41df18-d4b7-48bc-bc68-e79e51601ee5) |
+
+
 
 
 
