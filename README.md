@@ -4,8 +4,7 @@
 	- data augmentation
 		- get open-world knowledge for user/item
 		- generate interaction data
-  	- data condense
-   	- knowledge distillation 
+  	- data condense 
 2. Feature Encoder
 	- encode text information
 	- encode id information
@@ -13,6 +12,7 @@
 	- prompt learning 
 	- instruction tuning
  	- reinforce learning
+  	- knowledge distillation 
 4. Pipeline Controller
 	- pipeline design
 	- CoT, ToT, SI
@@ -37,6 +37,11 @@
 | Large Language Models for Next Point-of-Interest Recommendation | | SIGIR24 | 现有的next POI方法侧重于短轨迹和冷启动问题（数据量少且轨迹短的用户），没有充分探索丰富的LBSN的数据,可以使用LLM的自然语言理解能力，来处理所有类型的LBSN数据并更好地使用上下文信息 | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/ffc1b435-34bd-4483-aa5f-dc5d313f2882) |
 
 
+
+
+
+
+
 ### Feature Encoder
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
@@ -49,7 +54,7 @@
 | Breaking the Length Barrier: LLM-Enhanced CTR Prediction in Long Textual User Behaviors | BAHE | SIGIR24 short paper | 长序列LLM推理开销大。本文思路是固定LLM的浅层参数，预先存储一些原子交互的LLM的浅层特征，后续直接查表 | <img width="327" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/66b18e3d-be51-42ee-98b4-ec6b35f0f973"> |
 | Large Language Models Augmented Rating Prediction in Recommender System | LLM-TRSR | ICASSP24 | ensemble LLM_Rec和传统Rec的输出 | <img width="613" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/87dac872-f67c-40db-9a5e-d33c164564d3"> |
 | Enhancing Content-based Recommendation via Large Language Model | LOID | arxiv24 short paper | 不同domain的content语义信息之间可能有gap；同时利用LLM和传统RS的信息，提出一种ID和content信息align的范式。用ID embedding作为key提取text embedding序列当中的信息 | <img width="444" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/b0ddb95f-2e46-48ae-9575-bf55053f7828">
-| Aligning Large Language Models with Recommendation Knowledge |  | arxiv24 | 将推荐领域的一些知识，例如MIM和BPR，通过prompt的形式将其传输给LLM | <img width="270" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/49c95f93-0676-4ad3-a24d-8c12c56a3ed3"> |
+| Aligning Large Language Models with Recommendation Knowledge |  | arXiv24 | 将推荐领域的一些知识，例如MIM和BPR，通过prompt的形式将其传输给LLM | <img width="270" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/49c95f93-0676-4ad3-a24d-8c12c56a3ed3"> |
 | The Elephant in the Room: Rethinking the Usage of Pre-trained Language Model in Sequential Recommendation | Elephant in the Room | arxiv24 | 序列推荐的大模型的attention层的大部分参数都没有被使用，参数存在大量的冗余。本文将LLM学到的item embedding作为SASRec的初始化，然后再训练SASRec | <img width="378" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/21a58739-d184-4f4b-b3b8-f8f832e76122"> |
 | Demystifying Embedding Spaces using Large Language Models |  | ICLR24 | 用LLM对item的embedding空间进行解释，包括未在训练数据中出现过的item | <img width="357" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/39361365-f2de-4f50-a1fe-714ac0450cc4"> |
 
@@ -79,7 +84,7 @@
 | Play to Your Strengths: Collaborative Intelligence of Conventional Recommender Models and Large Language Models | Play to Your Strength | arxiv24.3 | CTR task；由于LLM inference时间过长，且传统RS和LLM RS擅长不同的数据，本文考虑对不同数据分别使用传统RS和LLM进行推荐。方法是将传统RS confidence低的sample丢给LLM RS判断 | <img width="359" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/c8fa5ae1-331c-4fc5-affd-c58715e1d5b0"> |
 |GPT4Rec: A generative framework for personalized recommendation and user interests interpretation|GPT4Rec| arxiv23 | 用GPT2根据历史交互产生query，在BM25中检索item | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/82808d6d-5a7c-409c-a8ec-42e626fa95e1) |
 | Unsupervised large Language Model Alignment for Information Retrieval via Contrastive Feedback | | SIGIR24 | LLMs产生的responses不能捕捉内容相似的document之间的区别,设计group-wise的方法产生反馈信号，用无监督学习+强化学习，使LLMs产生context-specific的responses| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/0d41df18-d4b7-48bc-bc68-e79e51601ee5) |
-
+| RDRec: Rationale Distillation for LLM-based Recommendation | RDRec | arXiv24 | 现在的LLM4REC很少关注user产生interaction背后的rationale；让LLM通过prompt从review中提取user preference和item attribute，然后利用小LM进行蒸馏 | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/6e9bea91-1568-49be-9cc4-3a9fb79b95a7) |
 
 
 
