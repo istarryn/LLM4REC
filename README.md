@@ -118,6 +118,7 @@
 
 
 
-#### Reinforce Learning in LLM
-| Title | Model | Time | Motivation | Discription |
+#### Reinforce Learning in LLM (DPO)
+| Title | Model | Time | Motivation | Loss Function |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
+| Direct Preference Optimization: Your Language Model is Secretly a Reward Model | DPO | NeurIPS24 | 省去RLHF对于reward model的构建，直接针对偏好数据进行模型的优化 | $\mathcal{L}_{DPO}(\pi_\theta;\pi_{ref}) = -\mathbb{E}_{(x,y_w,y_l)\sim\mathcal{D}}[\log\sigma(\beta\log\frac{\pi_\theta(y_w|x)}{\pi_{ref}(y_w|x)}-\beta\log\frac{\pi_{ref}(y_l|x)}{\pi_\theta(y_l|x)})]
