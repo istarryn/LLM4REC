@@ -118,7 +118,15 @@
 
 
 
-#### Reinforce Learning in LLM
-| Title | Model | Time | Motivation | Discription |
+#### Preference Optimization in LLM (DPO)
+| Title | Model | Time | Motivation | Loss Fuction |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
 | Direct Preference Optimization: Your Language Model is Secretly a Reward Model | DPO | NeurIPS24 | 省去RLHF对于reward model的构建，直接针对偏好数据进行模型的优化 | ![image](https://github.com/sssth/LLM4REC/assets/105367602/2ba5ce0c-966a-421c-9c7f-deb3f46b96f9) |
+| Statistical Rejection Sampling Improves Preference Optimization | RSO | ICLR24 | 提出DPO的偏好数据并非采样自最优策略 | | |
+| KTO: Model Alignment as Prospect Theoretic Optimization | KTO | arXiv24 | 将DPO修正为针对label数据而非偏好数据对的优化 |![image](https://github.com/istarryn/LLM4REC/assets/105367602/59cfc51b-ae2f-4a5f-9780-f3ad39182874)|
+| A General Theoretical Paradigm to Understand Learning from Human Preferences | IPO | PMLR24 | | |
+| Provably Robust DPO: Aligning Language Models with Noisy Feedback | rDPO | arXiv24 | 对偏好数据概率翻转鲁棒的DPO | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/eb4c9e58-b18f-43ae-b5e0-23bff0367dab) |
+| Zephyr: Direct Distillation of LM Alignment | Zephyr | arXiv23 | 利用大模型（GPT4）生成偏好数据，再使用DPO对7B模型进行微调 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/35c51729-90cc-4de4-945d-72da8011891a) |
+
+
+
