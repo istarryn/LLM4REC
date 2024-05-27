@@ -121,3 +121,4 @@
 #### Reinforce Learning in LLM
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
+| Direct Preference Optimization: Your Language Model is Secretly a Reward Model | DPO | NeurIPS24 | 省去RLHF对于reward model的构建，直接针对偏好数据进行模型的优化 | ![image](https://github.com/sssth/LLM4REC/assets/105367602/2ba5ce0c-966a-421c-9c7f-deb3f46b96f9) |
