@@ -19,7 +19,7 @@
  	- Incremental Learning
 5. Other Related work
 	- Self-distillation in LLM
- 	- Reinforce Learning in LLM
+ 	- DPO in LLM
 
 ### Feature Engineering
 | Title | Model | Time | Motivation | Discription |
