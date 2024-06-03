@@ -1,4 +1,4 @@
-# LLM4REC
+![image](https://github.com/istarryn/LLM4REC/assets/105367602/ba0391f2-7c35-4f9d-8b7b-4af8ab639855)# LLM4REC
 ## OVERVIEW
 1. Feature Engineering
 	- data augmentation
@@ -118,14 +118,17 @@
 
 
 
-#### Preference Optimization in LLM (DPO)
-| Title | Model | Time | Motivation | Loss Fuction |
+#### Direct Preference Optimization in LLM (DPO)
+| Title | Model | Time | Motivation | Discription/Loss Fuction |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
 | Direct Preference Optimization: Your Language Model is Secretly a Reward Model | DPO | NeurIPS24 | 省去RLHF对于reward model的构建，直接针对偏好数据进行模型的优化 | ![image](https://github.com/sssth/LLM4REC/assets/105367602/2ba5ce0c-966a-421c-9c7f-deb3f46b96f9) |
-| Statistical Rejection Sampling Improves Preference Optimization | RSO | ICLR24 | 提出DPO的偏好数据并非采样自最优策略 | | |
+| Statistical Rejection Sampling Improves Preference Optimization | RSO | ICLR24 | 提出DPO的偏好数据并非采样自最优策略，引入显式的reward模型和统计拒绝采样使产生自SFT模型的数据分布可以拟合最优模型的数据分布 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/bed64e50-1975-4775-9965-6e0f5643d13c) |
 | KTO: Model Alignment as Prospect Theoretic Optimization | KTO | arXiv24 | 将DPO修正为针对label数据而非偏好数据对的优化 |![image](https://github.com/istarryn/LLM4REC/assets/105367602/59cfc51b-ae2f-4a5f-9780-f3ad39182874)|
-| A General Theoretical Paradigm to Understand Learning from Human Preferences | IPO | PMLR24 | | |
-| Provably Robust DPO: Aligning Language Models with Noisy Feedback | rDPO | arXiv24 | 对偏好数据概率翻转鲁棒的DPO | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/eb4c9e58-b18f-43ae-b5e0-23bff0367dab) |
+| Curry-DPO: Enhancing Alignment using Curriculum Learning & Ranked Preferences | Curry-DPO | arXiv24 | 对于同个prompt的多个response，按照reward的差值构造pairwise数据对，再利用课程学习由易到难进行训练 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/f30f96f5-972f-4e03-9234-e195976368d3)|
+| LiPO: Listwise Preference Optimization through Learning-to-Rank | LiPO | arXiv24 | 修正DPO的loss，直接对listwise数据进行优化 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/49c4daa2-5fa3-4bb7-8bbe-523a4e50c2a7)|
+| ULMA: Unified Language Model Alignment with Human Demonstration and Point-wise Preference | ULMA| arXiv23 | 修正DPO的loss，直接对pointwise数据进行优化 |![image](https://github.com/istarryn/LLM4REC/assets/105367602/e7c0a711-34da-4a04-a63e-847fdc6c6f70)|
+| A General Theoretical Paradigm to Understand Learning from Human Preferences | IPO | PMLR24 | 在DPO loss上加了一个正则化项，避免训练时快速overfitting| |
+| Provably Robust DPO: Aligning Language Models with Noisy Feedback | rDPO | arXiv24 | 修正DPO的loss,使其对偏好数据概率翻转鲁棒 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/eb4c9e58-b18f-43ae-b5e0-23bff0367dab) |
 | Zephyr: Direct Distillation of LM Alignment | Zephyr | arXiv23 | 利用大模型（GPT4）生成偏好数据，再使用DPO对7B模型进行微调 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/35c51729-90cc-4de4-945d-72da8011891a) |
 
 
