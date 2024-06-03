@@ -127,7 +127,11 @@
 | Curry-DPO: Enhancing Alignment using Curriculum Learning & Ranked Preferences | Curry-DPO | arXiv24 | 对于同个prompt的多个response，按照reward的差值构造pairwise数据对，再利用课程学习由易到难进行训练 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/f30f96f5-972f-4e03-9234-e195976368d3)|
 | LiPO: Listwise Preference Optimization through Learning-to-Rank | LiPO | arXiv24 | 修正DPO的loss，直接对listwise数据进行优化 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/49c4daa2-5fa3-4bb7-8bbe-523a4e50c2a7)|
 | ULMA: Unified Language Model Alignment with Human Demonstration and Point-wise Preference | ULMA| arXiv23 | 修正DPO的loss，直接对pointwise数据进行优化 |![image](https://github.com/istarryn/LLM4REC/assets/105367602/e7c0a711-34da-4a04-a63e-847fdc6c6f70)|
-| A General Theoretical Paradigm to Understand Learning from Human Preferences | IPO | PMLR24 | 在DPO loss上加了一个正则化项，避免训练时快速overfitting| |
+| Reinforcement Learning from Human Feedback with Active Queries | ADPO | arXiv24 | active-learning的范式，去除reward差值小的数据对 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/af0fbd5b-3f02-425e-8018-67cf4d529f39)|
+| RS-DPO: A Hybrid Rejection Sampling and Direct Preference Optimization Method for Alignment of Large Language Models| RS-DPO | arXiv24 | 引入显式的reward模型，使用拒绝统计采样，去除reward差值小的数据对，提高样本利用效率 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/89f0420e-5a0e-4d3f-92d7-3de9ee5655f3)|
+| Direct Preference Optimization with an Offset| ODPO| arXiv24 | 引入偏移值来表示偏好数据集中喜欢相对于不喜欢的程度 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/55327f61-ebb6-47ab-9e18-f18e45a4651f)|
+| BRAIN: Bayesian Reward-conditioned Amortized INference for natural language generation from feedback | BRAIN| 重新引入reward模型表示偏好数据集中喜欢相对于不喜欢的程度 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/c578f54f-e299-4887-a6fc-063473d948a6)|
+| A General Theoretical Paradigm to Understand Learning from Human Preferences | IPO | PMLR24 | 在DPO loss上加了一个正则化项，避免训练时快速overfitting| | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/6b099d1e-505c-4cd6-9a7f-a95740d50b1c) |
 | Provably Robust DPO: Aligning Language Models with Noisy Feedback | rDPO | arXiv24 | 修正DPO的loss,使其对偏好数据概率翻转鲁棒 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/eb4c9e58-b18f-43ae-b5e0-23bff0367dab) |
 | Zephyr: Direct Distillation of LM Alignment | Zephyr | arXiv23 | 利用大模型（GPT4）生成偏好数据，再使用DPO对7B模型进行微调 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/35c51729-90cc-4de4-945d-72da8011891a) |
 
