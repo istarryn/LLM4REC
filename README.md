@@ -1,4 +1,4 @@
-![image](https://github.com/istarryn/LLM4REC/assets/105367602/ba0391f2-7c35-4f9d-8b7b-4af8ab639855)# LLM4REC
+# LLM4REC
 ## OVERVIEW
 1. Feature Engineering
 	- data augmentation
