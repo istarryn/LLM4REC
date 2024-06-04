@@ -132,6 +132,9 @@
 | Direct Preference Optimization with an Offset| ODPO| arXiv24 | 引入偏移值来表示偏好数据集中喜欢相对于不喜欢的程度 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/55327f61-ebb6-47ab-9e18-f18e45a4651f)|
 | BRAIN: Bayesian Reward-conditioned Amortized INference for natural language generation from feedback | BRAIN | arXiv24 | 重新引入reward模型表示偏好数据集中喜欢相对于不喜欢的程度 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/c578f54f-e299-4887-a6fc-063473d948a6)|
 | D2PO: Discriminator-Guided DPO with Response Evaluation Models | D2PO | arXiv24 | online训练方式，同时训练一个reward模型，在训练过程中迭代地由当前模型和reward模型产生新样本| ![image](https://github.com/istarryn/LLM4REC/assets/105367602/0903b4e4-5f3c-42af-985f-3bf42c3303d5)|
+|Learn Your Reference Model for Real Good Alignment|TR-DPO|arXiv24|使用soft和hard两种更新方式，在训练期间更新reference model|![image](https://github.com/istarryn/LLM4REC/assets/105367602/f96f57fe-94bd-490e-9f77-c6589c353fdc)|
+|sDPO: Don’t Use Your Data All at Once|sDPO|arXiv24|分批利用训练数据集，并在训练过程中更ref模型|![image](https://github.com/istarryn/LLM4REC/assets/105367602/0ceac2e8-c996-4cc1-9956-e1959d646b47)|
+|Direct Language Model Alignment from Online AI Feedback|OAIF|arXiv24|利用更优模型在训练过程中产生新的偏好数据对|![image](https://github.com/istarryn/LLM4REC/assets/105367602/44c94172-934b-4b51-a298-e9c669b36ba8)|
 | A General Theoretical Paradigm to Understand Learning from Human Preferences | IPO | PMLR24 | 在DPO loss上加了一个正则化项，避免训练时快速overfitting| | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/6b099d1e-505c-4cd6-9a7f-a95740d50b1c) |
 | Provably Robust DPO: Aligning Language Models with Noisy Feedback | rDPO | arXiv24 | 修正DPO的loss,使其对偏好数据概率翻转鲁棒 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/eb4c9e58-b18f-43ae-b5e0-23bff0367dab) |
 | Zephyr: Direct Distillation of LM Alignment | Zephyr | arXiv23 | 利用大模型（GPT4）生成偏好数据，再使用DPO对7B模型进行微调 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/35c51729-90cc-4de4-945d-72da8011891a) |
