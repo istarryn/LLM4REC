@@ -136,6 +136,8 @@
 | Zephyr: Direct Distillation of LM Alignment | Zephyr | arXiv23 | 利用大模型（GPT4）生成偏好数据，再使用DPO对7B模型进行微调 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/35c51729-90cc-4de4-945d-72da8011891a) |
 
 ### LLM4CTR
+| Title | Model | Time | Motivation | Description |
+|:-------:|:-------:|:-------:|:-------:|:-------:|
 | CTR-BERT: Cost-effective knowledge distillation for billion-parameter teacher models | CTR-BERT | NIPS WS'21 | Cost-effective knowledge distillation | CTR-BERT 提出了一种成本效益的知识蒸馏方法，用于十亿参数教师模型。 |
 | DCAF-BERT: A Distilled Cachable Adaptable Factorized Model For Improved Ads CTR Prediction | DCAF-BERT | WWW'22 | Improved Ads CTR Prediction | DCAF-BERT 提出了一种经过蒸馏的可缓存可适应因式化模型，用于提高广告点击率预测的准确性。 |
 | Learning Supplementary NLP Features for CTR Prediction in Sponsored Search | - | KDD'22 | Supplementary NLP Features | 为了在赞助搜索中进行点击率预测，该研究探索了学习补充自然语言处理特征的方法。 |
