@@ -7,12 +7,12 @@
 			- generate interaction data
 	  	- data condense
    		- feature selection
-     		- feature imputation 
+		- feature imputation 
 	- Feature Encoder
 		- encode text information
 		- encode id information
 
-2. LLMs serve as Recommenders
+2. LLMs as Recommenders
 	- prompt learning 
 	- instruction tuning
 	- reinforce learning
@@ -32,15 +32,15 @@
 ### Feature Engineering
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
-|   Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models    |   KAR     |   arXiv23   |     利用LLM的open-world knowledge扩充用户和物品的信息        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/2d2eea2e-c88e-4d9e-ab3e-7dc8f67c90fe)|
+|   Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models    |   KAR     |   RecSys24   |     利用LLM的open-world knowledge扩充用户和物品的信息        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/2d2eea2e-c88e-4d9e-ab3e-7dc8f67c90fe)|
 |   A First Look at LLM-Powered Generative News Recommendation    |   ONCE(GENRE+DIRE)    |   arXiv23   |     对于开源LLM，利用它们作为特征编码器。对于闭源LLM，使用提示丰富训练数据        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/da1e9be8-d334-4240-8359-4deca3417c96) |
 |  LLMRec: Large Language Models with Graph Augmentation for Recommendation     |    LLMRec    |  WSDM24    |    利用LLM进行图数据增强，从item candidates中选出liked item和disliked item    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/d241c52f-611f-47bf-8fb4-7a5095b0a1f4) |
 |  Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation    |    Llama4Rec   |  arXiv24    |    由mutual augmentation和adaptive aggregation组成。mutual augmentation包括data增强和prompt增强。  |![image](https://github.com/istarryn/LLM4REC/assets/149132603/395b7bac-23c9-45cd-bfbd-6ceb463edb27) |
-|  Data-efficient Fine-tuning for LLM-based Recommendation    |    DEALRec   |  arXiv24    |  设计influence score和effort score，对LLM4REC进行数据蒸馏，挑选出有influential的samples  |![image](https://github.com/istarryn/LLM4REC/assets/149132603/6a7b308c-090d-475d-b272-19243c3bd44c)|
+|  Data-efficient Fine-tuning for LLM-based Recommendation    |    DEALRec   |  SIGIR24    |  设计influence score和effort score，对LLM4REC进行数据蒸馏，挑选出有influential的samples  |![image](https://github.com/istarryn/LLM4REC/assets/149132603/6a7b308c-090d-475d-b272-19243c3bd44c)|
 | Distillation is All You Need for Practically Using Different Pre-trained Recommendation Models |PRM-KD |arXiv24|利用了不同类型的预训练推荐模型作为教师模型，提取in-batch negative item scores进行联合知识蒸馏|![image](https://github.com/istarryn/LLM4REC/assets/149132603/981489e3-b420-4f8a-99b0-9a36706b0fcb)|
-| CoRAL: Collaborative Retrieval-Augmented Large Language Models Improve Long-tail Recommendation | CoRAL | arXiv24 | 通过强化学习，将协同信息以prompt的形式增强LLM，实现对于Long-tail Recommendation推荐性能的改进|![image](https://github.com/istarryn/LLM4REC/assets/149132603/ef14e721-86cf-4946-9cca-707a0f6e6eb1)|
-| Harnessing Large Language Models for Text-Rich Sequential Recommendation | |arXiv24|关注LLM4REC的数据压缩问题，先将用户历史交互分片，然后用LLM总结每个分片的内容，最后设计prompt将总结后的user偏好、最近user交互和candidate items结合在一起|![image](https://github.com/istarryn/LLM4REC/assets/149132603/4d3a8083-c269-4086-9250-2d515cd16738)|
-| Large Language Models Enhanced Collaborative Filtering |LLM-CF|arXiv24|通过ICL和COT，将LLM的world knowledge和reasoning capabilities蒸馏到collaborative filtering|![image](https://github.com/istarryn/LLM4REC/assets/149132603/bf79cde0-f342-49c5-a3e7-e9e94eb9051f)|
+| CoRAL: Collaborative Retrieval-Augmented Large Language Models Improve Long-tail Recommendation | CoRAL | KDD24 | 通过强化学习，将协同信息以prompt的形式增强LLM，实现对于Long-tail Recommendation推荐性能的改进|![image](https://github.com/istarryn/LLM4REC/assets/149132603/ef14e721-86cf-4946-9cca-707a0f6e6eb1)|
+| Harnessing Large Language Models for Text-Rich Sequential Recommendation | |WWW24|关注LLM4REC的数据压缩问题，先将用户历史交互分片，然后用LLM总结每个分片的内容，最后设计prompt将总结后的user偏好、最近user交互和candidate items结合在一起|![image](https://github.com/istarryn/LLM4REC/assets/149132603/4d3a8083-c269-4086-9250-2d515cd16738)|
+| Large Language Models Enhanced Collaborative Filtering |LLM-CF|CIKM24|通过ICL和COT，将LLM的world knowledge和reasoning capabilities蒸馏到collaborative filtering|![image](https://github.com/istarryn/LLM4REC/assets/149132603/bf79cde0-f342-49c5-a3e7-e9e94eb9051f)|
 | Optimization Methods for Personalizing Large Language Models through Retrieval Augmentation | | SIGIR24 | LLMs不能根据其用户的背景和历史偏好定制其生成的输出,通过强化学习+知识蒸馏选择最能增强LLM的个人信息 | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/42f3cff0-3569-40be-b183-79b29464deb6) |
 | Large Language Models for Next Point-of-Interest Recommendation | | SIGIR24 | 现有的next POI方法侧重于短轨迹和冷启动问题（数据量少且轨迹短的用户），没有充分探索丰富的LBSN的数据,可以使用LLM的自然语言理解能力，来处理所有类型的LBSN数据并更好地使用上下文信息 | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/ffc1b435-34bd-4483-aa5f-dc5d313f2882) |
 
@@ -56,9 +56,9 @@
 | Rella: Retrieval-enhanced large language models for lifelong sequential behavior comprehension in recommendation | ReLLa | WWW24 | CTR问题，LLM对于长的序列效果不佳；本文根据target item从长序列中选择相似的部分item作为序列；item的embedding通过LLM对text信息进行构建 | <img width="308" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/9e0883fb-4681-4de4-8677-f25c9b5ef16d"> |
 | Breaking the Length Barrier: LLM-Enhanced CTR Prediction in Long Textual User Behaviors | BAHE | SIGIR24 short paper | 长序列LLM推理开销大。本文思路是固定LLM的浅层参数，预先存储一些原子交互的LLM的浅层特征，后续直接查表 | <img width="327" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/66b18e3d-be51-42ee-98b4-ec6b35f0f973"> |
 | Large Language Models Augmented Rating Prediction in Recommender System | LLM-TRSR | ICASSP24 | ensemble LLM_Rec和传统Rec的输出 | <img width="613" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/87dac872-f67c-40db-9a5e-d33c164564d3"> |
-| Enhancing Content-based Recommendation via Large Language Model | LOID | arxiv24 short paper | 不同domain的content语义信息之间可能有gap；同时利用LLM和传统RS的信息，提出一种ID和content信息align的范式。用ID embedding作为key提取text embedding序列当中的信息 | <img width="444" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/b0ddb95f-2e46-48ae-9575-bf55053f7828">
+| Enhancing Content-based Recommendation via Large Language Model | LOID | CIKM24 short paper | 不同domain的content语义信息之间可能有gap；同时利用LLM和传统RS的信息，提出一种ID和content信息align的范式。用ID embedding作为key提取text embedding序列当中的信息 | <img width="444" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/b0ddb95f-2e46-48ae-9575-bf55053f7828">
 | Aligning Large Language Models with Recommendation Knowledge |  | arXiv24 | 将推荐领域的一些知识，例如MIM和BPR，通过prompt的形式将其传输给LLM | <img width="270" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/49c95f93-0676-4ad3-a24d-8c12c56a3ed3"> |
-| The Elephant in the Room: Rethinking the Usage of Pre-trained Language Model in Sequential Recommendation | Elephant in the Room | arxiv24 | 序列推荐的大模型的attention层的大部分参数都没有被使用，参数存在大量的冗余。本文将LLM学到的item embedding作为SASRec的初始化，然后再训练SASRec | <img width="378" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/21a58739-d184-4f4b-b3b8-f8f832e76122"> |
+| The Elephant in the Room: Rethinking the Usage of Pre-trained Language Model in Sequential Recommendation | Elephant in the Room | RecSys24 | 序列推荐的大模型的attention层的大部分参数都没有被使用，参数存在大量的冗余。本文将LLM学到的item embedding作为SASRec的初始化，然后再训练SASRec | <img width="378" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/21a58739-d184-4f4b-b3b8-f8f832e76122"> |
 | Demystifying Embedding Spaces using Large Language Models |  | ICLR24 | 用LLM对item的embedding空间进行解释，包括未在训练数据中出现过的item | <img width="357" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/39361365-f2de-4f50-a1fe-714ac0450cc4"> |
 
 
@@ -82,9 +82,9 @@
 | Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agents     |        |  arXiv23    |   利用GPT模型进行文本排序任务，将GPT模型的标注结果用于模型蒸馏    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/265a4ae2-3627-4d98-9ff8-473ec5fd8626) |
 | LLaRA: Aligning Large Language Models with Sequential Recommenders | LLaRA  |  arXiv23    |   在prompt中采用文本表征+传统模型学习的混合表征    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/cd1a24be-923e-4fb1-8540-13b70b942a9e)|
 | Collaborative Contextualization: Bridging the Gap between Collaborative Filtering and Pre-trained Language Model     |  CollabContext  |  arXiv23    |   利用LLM学习到的文本表征和传统模型表征进行双向蒸馏    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/810425d8-65f4-4883-b1b8-021bb6ff6e03)|
-|Adapting Large Language Models by Integrating Collaborative Semantics for Recommendation|LC-Rec |arXiv23 |对于item索引，设计了一种语义映射方法，可以为item分配有意义且不冲突的id，同时提出了一系列特别设计的tuning任务，迫使llm深度整合语言和协同过滤语义|![image](https://github.com/istarryn/LLM4REC/assets/149132603/73f5626e-2768-4b07-8599-5d0306c6d4ae)|
+|Adapting Large Language Models by Integrating Collaborative Semantics for Recommendation|LC-Rec | ICDE24 |对于item索引，设计了一种语义映射方法，可以为item分配有意义且不冲突的id，同时提出了一系列特别设计的tuning任务，迫使llm深度整合语言和协同过滤语义|![image](https://github.com/istarryn/LLM4REC/assets/149132603/73f5626e-2768-4b07-8599-5d0306c6d4ae)|
 | Collaborative Large Language Model for Recommender Systems| CLLM4Rec| WWW24 | 为了减少自然语言和推荐语义的gap，本文为user和item扩充词表使其与唯一的token绑定，并引入协同信号进行训练扩充的token的embedding | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/72044ed3-5b33-41b0-8e99-70cd62cfe9cb)|
-| Play to Your Strengths: Collaborative Intelligence of Conventional Recommender Models and Large Language Models | Play to Your Strength | arxiv24.3 | CTR task；由于LLM inference时间过长，且传统RS和LLM RS擅长不同的数据，本文考虑对不同数据分别使用传统RS和LLM进行推荐。方法是将传统RS confidence低的sample丢给LLM RS判断 | <img width="359" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/c8fa5ae1-331c-4fc5-affd-c58715e1d5b0"> |
+| Play to Your Strengths: Collaborative Intelligence of Conventional Recommender Models and Large Language Models | Play to Your Strength | arxiv24 | CTR task；由于LLM inference时间过长，且传统RS和LLM RS擅长不同的数据，本文考虑对不同数据分别使用传统RS和LLM进行推荐。方法是将传统RS confidence低的sample丢给LLM RS判断 | <img width="359" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/c8fa5ae1-331c-4fc5-affd-c58715e1d5b0"> |
 |GPT4Rec: A generative framework for personalized recommendation and user interests interpretation|GPT4Rec| arxiv23 | 用GPT2根据历史交互产生query，在BM25中检索item | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/82808d6d-5a7c-409c-a8ec-42e626fa95e1) |
 | Unsupervised large Language Model Alignment for Information Retrieval via Contrastive Feedback | | SIGIR24 | LLMs产生的responses不能捕捉内容相似的document之间的区别,设计group-wise的方法产生反馈信号，用无监督学习+强化学习，使LLMs产生context-specific的responses| ![image](https://github.com/istarryn/LLM4REC/assets/149132603/0d41df18-d4b7-48bc-bc68-e79e51601ee5) |
 | RDRec: Rationale Distillation for LLM-based Recommendation | RDRec | arXiv24 | 现在的LLM4REC很少关注user产生interaction背后的rationale；让LLM通过prompt从review中提取user preference和item attribute，然后利用小LM进行蒸馏 | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/6e9bea91-1568-49be-9cc4-3a9fb79b95a7) |
@@ -136,37 +136,36 @@
 | Zephyr: Direct Distillation of LM Alignment | Zephyr | arXiv23 | 利用大模型（GPT4）生成偏好数据，再使用DPO对7B模型进行微调 | ![image](https://github.com/istarryn/LLM4REC/assets/105367602/35c51729-90cc-4de4-945d-72da8011891a) |
 
 ### LLM4CTR
-| Title | Model | Time | Motivation | Description |
-|:-------:|:-------:|:-------:|:-------:|:-------:|
-| CTR-BERT: Cost-effective knowledge distillation for billion-parameter teacher models | CTR-BERT | NIPS WS'21 | Cost-effective knowledge distillation | CTR-BERT 提出了一种成本效益的知识蒸馏方法，用于十亿参数教师模型。 |
-| DCAF-BERT: A Distilled Cachable Adaptable Factorized Model For Improved Ads CTR Prediction | DCAF-BERT | WWW'22 | Improved Ads CTR Prediction | DCAF-BERT 提出了一种经过蒸馏的可缓存可适应因式化模型，用于提高广告点击率预测的准确性。 |
-| Learning Supplementary NLP Features for CTR Prediction in Sponsored Search | - | KDD'22 | Supplementary NLP Features | 为了在赞助搜索中进行点击率预测，该研究探索了学习补充自然语言处理特征的方法。 |
-| Practice on Effectively Extracting NLP Features for Click-Through Rate Prediction | - | CIKM'23 | Extracting NLP Features | 通过实践，研究了有效提取自然语言处理特征用于点击率预测的方法。 |
-| BERT4CTR: An Efficient Framework to Combine Pre-trained Language Model with Non-textual Features for CTR Prediction | BERT4CTR | KDD'23 | Combine Language Model with Non-textual Features | BERT4CTR 提出了一种高效的框架，将预训练语言模型与非文本特征结合，用于点击率预测。 |
-| M6-rec: Generative pretrained language models are open-ended recommender systems | M6-rec | arxiv'22 | Open-ended Recommender Systems | M6-rec 提出了一种生成式预训练语言模型，用作开放式推荐系统。 |
-| Ctrl: Connect tabular and language model for ctr prediction | Ctrl | arxiv'23 | Connect Tabular and Language Model | Ctrl 提出了一种连接表格数据和语言模型用于点击率预测的方法。 |
-| FLIP: Towards Fine-grained Alignment between ID-based Models and Pretrained Language Models for CTR Prediction | FLIP | arxiv'23 | Alignment between Models | FLIP 旨在实现基于ID的模型和预训练语言模型之间的细粒度对齐，用于点击率预测。 |
-| TBIN: Modeling Long Textual Behavior Data for CTR Prediction | TBIN | arxiv'23 | Modeling Long Textual Behavior Data | TBIN 提出了一种用于点击率预测的长文本行为数据建模方法。 |
-| An Unified Search and Recommendation Foundation Model for Cold-Start Scenario | - | CIKM'23 | Unified Search and Recommendation Model | 为冷启动场景提出了一个统一的搜索和推荐基础模型。 |
-| A Unified Framework for Multi-Domain CTR Prediction via Large Language Models | - | arxiv'23 | Multi-Domain CTR Prediction | 提出了一个通过大型语言模型进行多领域点击率预测的统一框架。 |
-| UFIN: Universal Feature Interaction Network for Multi-Domain Click-Through Rate Prediction | UFIN | arxiv'23 | Feature Interaction Network | UFIN 提出了一种通用特征交互网络，用于多领域的点击率预测。 |
-| ClickPrompt: CTR Models are Strong Prompt Generators for Adapting Language Models to CTR Prediction | ClickPrompt | WWW'24 | Prompt Generators | ClickPrompt 提出了点击率模型作为强大提示生成器，用于调整语言模型以进行点击率预测。 |
-| PRINT: Personalized Relevance Incentive Network for CTR Prediction in Sponsored Search | PRINT | WWW'24 | Personalized Relevance Incentive Network | PRINT 提出了一种个性化相关性激励网络，用于赞助搜索中的点击率预测。 |
-| Breaking the Length Barrier: LLM-Enhanced CTR Prediction in Long Textual User Behaviors | - | arxiv'24 | LLM-Enhanced CTR Prediction | 提出一种在长文本用户行为中增强点击率预测的LLM方法。 |
-| KELLMRec: Knowledge-Enhanced Large Language Models for Recommendation | KELLMRec | arxiv'24 | Knowledge-Enhanced Models | KELLMRec 提出了一种增强知识的大型语言模型用于推荐任务。 |
-| Enhancing sequential recommendation via llm-based semantic embedding learning | - | WWW'24 | Semantic Embedding Learning | 通过基于LLM的语义嵌入学习来增强顺序推荐任务。 |
-| Heterogeneous knowledge fusion: A novel approach for personalized recommendation via llm | - | Recsys'23 | Knowledge Fusion | 通过异构知识融合，提出了一种通过LLM进行个性化推荐的新方法。 |
-| Play to Your Strengths: Collaborative Intelligence of Conventional Recommender Models and Large Language Models | - | arxiv'24 | Collaborative Intelligence | 利用传统推荐模型和大型语言模型的协同智能来发挥各自优势。 |
-| Generative Explore-Exploit: Training-free Optimization of Generative Recommender Systems using LLM Optimizers | - | arxiv'24 | Explore-Exploit Optimization | 通过LLM优化器实现生成式推荐系统的无训练优化，实现探索-利用策略。 |
+| Title | Model | Time | Description |
+|:-------:|:-------:|:-------:|:-------:|
+| CTR-BERT: Cost-effective knowledge distillation for billion-parameter teacher models | CTR-BERT | NIPS WS'21 | CTR-BERT 提出了一种成本效益的知识蒸馏方法，用于十亿参数教师模型。 |
+| DCAF-BERT: A Distilled Cachable Adaptable Factorized Model For Improved Ads CTR Prediction | DCAF-BERT | WWW'22 | DCAF-BERT 提出了一种经过蒸馏的可缓存可适应因式化模型，用于提高广告点击率预测的准确性。 |
+| Learning Supplementary NLP Features for CTR Prediction in Sponsored Search | - | KDD'22 | 为了在赞助搜索中进行点击率预测，该研究探索了学习补充自然语言处理特征的方法。 |
+| Practice on Effectively Extracting NLP Features for Click-Through Rate Prediction | - | CIKM'23 | 通过实践，研究了有效提取自然语言处理特征用于点击率预测的方法。 |
+| BERT4CTR: An Efficient Framework to Combine Pre-trained Language Model with Non-textual Features for CTR Prediction | BERT4CTR | KDD'23 | BERT4CTR 提出了一种高效的框架，将预训练语言模型与非文本特征结合，用于点击率预测。 |
+| M6-rec: Generative pretrained language models are open-ended recommender systems | M6-rec | arxiv'22 | M6-rec 提出了一种生成式预训练语言模型，用作开放式推荐系统。 |
+| Ctrl: Connect tabular and language model for ctr prediction | Ctrl | arxiv'23 | Ctrl 提出了一种连接表格数据和语言模型用于点击率预测的方法。 |
+| FLIP: Towards Fine-grained Alignment between ID-based Models and Pretrained Language Models for CTR Prediction | FLIP | arxiv'23 | FLIP 旨在实现基于ID的模型和预训练语言模型之间的细粒度对齐，用于点击率预测。 |
+| TBIN: Modeling Long Textual Behavior Data for CTR Prediction | TBIN | arxiv'23 | TBIN 提出了一种用于点击率预测的长文本行为数据建模方法。 |
+| An Unified Search and Recommendation Foundation Model for Cold-Start Scenario | - | CIKM'23 | 为冷启动场景提出了一个统一的搜索和推荐基础模型。 |
+| A Unified Framework for Multi-Domain CTR Prediction via Large Language Models | - | arxiv'23 | 提出了一个通过大型语言模型进行多领域点击率预测的统一框架。 |
+| UFIN: Universal Feature Interaction Network for Multi-Domain Click-Through Rate Prediction | UFIN | arxiv'23 | UFIN 提出了一种通用特征交互网络，用于多领域的点击率预测。 |
+| ClickPrompt: CTR Models are Strong Prompt Generators for Adapting Language Models to CTR Prediction | ClickPrompt | WWW'24 | ClickPrompt 提出了点击率模型作为强大提示生成器，用于调整语言模型以进行点击率预测。 |
+| PRINT: Personalized Relevance Incentive Network for CTR Prediction in Sponsored Search | PRINT | WWW'24 | PRINT 提出了一种个性化相关性激励网络，用于赞助搜索中的点击率预测。 |
+| Breaking the Length Barrier: LLM-Enhanced CTR Prediction in Long Textual User Behaviors | - | arxiv'24 | 提出一种在长文本用户行为中增强点击率预测的LLM方法。 |
+| KELLMRec: Knowledge-Enhanced Large Language Models for Recommendation | KELLMRec | arxiv'24 | KELLMRec 提出了一种增强知识的大型语言模型用于推荐任务。 |
+| Enhancing sequential recommendation via llm-based semantic embedding learning | - | WWW'24 | 通过基于LLM的语义嵌入学习来增强顺序推荐任务。 |
+| Heterogeneous knowledge fusion: A novel approach for personalized recommendation via llm | - | Recsys'23 | 通过异构知识融合，提出了一种通过LLM进行个性化推荐的新方法。 |
+| Play to Your Strengths: Collaborative Intelligence of Conventional Recommender Models and Large Language Models | - | arxiv'24 | 利用传统推荐模型和大型语言模型的协同智能来发挥各自优势。 |
+| Generative Explore-Exploit: Training-free Optimization of Generative Recommender Systems using LLM Optimizers | - | arxiv'24 | 通过LLM优化器实现生成式推荐系统的无训练优化，实现探索-利用策略。 |
 #### Feature Selection
-| Title | Model | Time | Motivation | Description |
-|:-------:|:-------:|:-------:|:-------:|:-------:|
-| Feature selection: A data perspective | - | CSUR'17 | Data Perspective | 从数据角度出发的特征选择研究。 |
-| ICE-SEARCH: A Language Model-Driven Feature Selection Approach | ICE-SEARCH | arXiv'24 | Language Model-Driven Approach | ICE-SEARCH 提出了一种基于语言模型的特征选择方法。 |
+| Title | Model | Time | Description |
+|:-------:|:-------:|:-------:|:-------:|
+| ICE-SEARCH: A Language Model-Driven Feature Selection Approach | ICE-SEARCH | arXiv'24 | ICE-SEARCH 提出了一种基于语言模型的特征选择方法。 |
 | Large Language Model Pruning | - | arXiv'24 | Model Pruning | 针对大型语言模型的剪枝技术研究。 |
-| Dynamic and Adaptive Feature Generation with LLM | - | arXiv'24 | Feature Generation with LLM | 利用LLM进行动态和自适应特征生成的研究。 |
+| Dynamic and Adaptive Feature Generation with LLM | - | arXiv'24 | 利用LLM进行动态和自适应特征生成。 |
 #### Feature Imputation
 | Title | Model | Time | Motivation | Description |
-|:-------:|:-------:|:-------:|:-------:|:-------:|
-| CLAIM Your Data: Enhancing Imputation Accuracy with Contextual Large Language Models | - | CSUR'17 | Imputation Accuracy Enhancement | 使用上下文大型语言模型提高数据填充准确性的研究。 |
-| Llmrec: Large language models with graph augmentation for recommendation | Llmrec | WSDM'24 | Graph Augmentation for Recommendation | Llmrec 提出了一种利用图增强的大型语言模型用于推荐任务的方法。 |
+|:-------:|:-------:|:-------:|:-------:|
+| CLAIM Your Data: Enhancing Imputation Accuracy with Contextual Large Language Models | - | CSUR'17 | 使用上下文大型语言模型提高数据填充准确性的研究。 |
+| Llmrec: Large language models with graph augmentation for recommendation | Llmrec | WSDM'24 | Graph Augmentation for Recommendation | 利用图增强的大型语言模型用于推荐任务的方法。 |
