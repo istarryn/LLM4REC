@@ -32,6 +32,7 @@
 ### Feature Engineering
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
+|   Bridging the User-side Knowledge Gap in Knowledge-aware Recommendations with Large Language Models    |   CIKGRec   |   AAAI25  | 结构化LLM中用户侧的世界知识，增强知识感知的基于图的推荐算法  |  ![pic](https://github.com/user-attachments/assets/c84c6627-2d75-4195-bdcc-fcf3bc04a6e4)   |
 |   Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models    |   KAR     |   RecSys24   |     利用LLM的open-world knowledge扩充用户和物品的信息        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/2d2eea2e-c88e-4d9e-ab3e-7dc8f67c90fe)|
 |   A First Look at LLM-Powered Generative News Recommendation    |   ONCE(GENRE+DIRE)    |   arXiv23   |     对于开源LLM，利用它们作为特征编码器。对于闭源LLM，使用提示丰富训练数据        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/da1e9be8-d334-4240-8359-4deca3417c96) |
 |  LLMRec: Large Language Models with Graph Augmentation for Recommendation     |    LLMRec    |  WSDM24    |    利用LLM进行图数据增强，从item candidates中选出liked item和disliked item    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/d241c52f-611f-47bf-8fb4-7a5095b0a1f4) |
