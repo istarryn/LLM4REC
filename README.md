@@ -164,8 +164,3 @@
 | ICE-SEARCH: A Language Model-Driven Feature Selection Approach | ICE-SEARCH | arXiv'24 | ICE-SEARCH 提出了一种基于语言模型的特征选择方法。 |
 | Large Language Model Pruning | - | arXiv'24 | Model Pruning | 针对大型语言模型的剪枝技术研究。 |
 | Dynamic and Adaptive Feature Generation with LLM | - | arXiv'24 | 利用LLM进行动态和自适应特征生成。 |
-#### Feature Imputation
-| Title | Model | Time | Motivation | Description |
-|:-------:|:-------:|:-------:|:-------:|
-| CLAIM Your Data: Enhancing Imputation Accuracy with Contextual Large Language Models | - | CSUR'17 | 使用上下文大型语言模型提高数据填充准确性的研究。 |
-| Llmrec: Large language models with graph augmentation for recommendation | Llmrec | WSDM'24 | Graph Augmentation for Recommendation | 利用图增强的大型语言模型用于推荐任务的方法。 |
