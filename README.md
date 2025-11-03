@@ -116,6 +116,7 @@
 |   Recmind: Large language model powered agent for recommendation    |  Recmind      |  arXiv23    |   由LLM驱动的推荐Agent，可以推理、互动、记忆，提供精确的个性化推荐    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/97c194d5-fd08-4e60-9b9b-8bb33538084d) |
 |Preliminary Study on Incremental Learning for Large Language Model-based Recommender Systems| |arXiv23|实验发现full retraining and fine-tuning增量学习都没有显著提高LLM4Rec的性能，设计long term lora(freeze)和short term lora(hot)分别关注user长短期偏好|![image](https://github.com/istarryn/LLM4REC/assets/149132603/dfde5894-f18e-453e-a0d0-4fa615309074)|
 |Scaling Law of Large Sequential Recommendation Models| | arXiv23 |实验发现，扩大模型大小可以极大地提高具有挑战性的推荐任务上(如冷启动、鲁棒性、长期偏好)的性能|![image](https://github.com/istarryn/LLM4REC/assets/149132603/daee6696-aa64-499c-b83d-98b355ac8dae)|
+|On softmax direct preference optimization for recommendation|S-DPO|NIPS24|将DPO的负样本从一个扩展为多个，用于训练推荐大模型|<img width="1928" height="206" alt="image" src="https://github.com/user-attachments/assets/cf8080cc-7973-4cac-939f-bb924f08dcd1" />|
 
 
 ## 3. Other Related work
