@@ -93,6 +93,7 @@
 | Collaborative Large Language Model for Recommender Systems| CLLM4Rec| WWW24 | 为了减少自然语言和推荐语义的gap，本文为user和item扩充词表使其与唯一的token绑定，并引入协同信号进行训练扩充的token的embedding | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/72044ed3-5b33-41b0-8e99-70cd62cfe9cb)|
 | LlamaRec: Two-Stage Recommendation using Large Language Models for Ranking     |  LlamaRec    |  CIKM23    |  一般LLM生成推荐结果的推理成本很高，并且要进一步Grounding。LlamaRec利用一个verbalizer ，将LLM head的输出(即所有tokens的分数)转换为候选items的排名分数      |![image](https://github.com/istarryn/LLM4REC/assets/149132603/350fd16d-5a75-4d31-a9b9-9d4ee5aa92b4) |
 |E4srec: An elegant effective efficient extensible solution of large language models for sequential recommendation|E4srec|arXiv23|提出使用可学习的projection head来将LLM预测结果映射到真实item空间|<img width="2128" height="1004" alt="image" src="https://github.com/user-attachments/assets/8f167141-23cd-4edc-a2e6-e0997b1dece5" />|
+|Decoding matters: Addressing amplification bias and homogeneity issue in recommendations for large language models|D3|EMNLP24|从decoder的角度，删除长度归一化解决ghost token问题，平滑每个候选token的概率解决推荐同质化问题||
 |Msl: Not all tokens are what you need for tuning llm as a recommender| MSL | SIGIR25 | 为了解决LLM可能会生成虚构item的幻觉，提出了masked softmax loss来在训练过程中屏蔽非法token |<img width="1178" height="826" alt="image" src="https://github.com/user-attachments/assets/74f25fa7-ec7b-4635-bcf0-23b7fd36c549" />|
 
 
