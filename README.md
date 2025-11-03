@@ -105,7 +105,7 @@
 |   Can Small Language Models be Good Reasoners for Sequential Recommendation?    |  SLIM   |  WWW24  |   将大的LLM的逐步推理能力蒸馏到小的LLM中   | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/30e5222a-d8ba-4526-841c-ea3c56578279) |
 | RDRec: Rationale Distillation for LLM-based Recommendation | RDRec | arXiv24 | 现在的LLM4REC很少关注user产生interaction背后的rationale；让LLM通过prompt从review中提取user preference和item attribute，然后利用小LM进行蒸馏 | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/6e9bea91-1568-49be-9cc4-3a9fb79b95a7) |
 |SLMRec: Distilling large language models into small for sequential recommendation|SLMRec|ICLR25|实验发现LLM的许多中间layer对推荐是冗余的。在E4srec的基础上提出分块知识蒸馏，减少了模型参数|<img width="1578" height="814" alt="image" src="https://github.com/user-attachments/assets/654038f4-7d13-4a03-bd53-5dd86570ec9a" />|
-|Large language models meet collaborative filtering: An efficient all-round llm-based recommender system|A-LLMRec|两阶段的推荐架构，一阶段通过“id emb和text emb的matching mse loss”、“emb降维的recon mse loss”、“user emb和item emb的rec bce loss”学习高质量的user emb，二阶段将user emb和item emb设计为可学习的token注入LLM的prompt中，能够在冻结LLM的参数的情况下取得不错的推荐结果|<img width="1894" height="582" alt="image" src="https://github.com/user-attachments/assets/20acd59e-d89d-4353-9653-24145f4ef063" />|
+|Large language models meet collaborative filtering: An efficient all-round llm-based recommender system|A-LLMRec|KDD24|两阶段的推荐架构，一阶段通过“id emb和text emb的matching mse loss”、“emb降维的recon mse loss”、“user emb和item emb的rec bce loss”学习高质量的user emb，二阶段将user emb和item emb设计为可学习的token注入LLM的prompt中，能够在冻结LLM的参数的情况下取得不错的推荐结果|<img width="1894" height="582" alt="image" src="https://github.com/user-attachments/assets/20acd59e-d89d-4353-9653-24145f4ef063" />|
 
 
 ### architecture
