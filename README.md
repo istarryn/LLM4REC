@@ -93,7 +93,6 @@
 | Collaborative Large Language Model for Recommender Systems| CLLM4Rec| WWW24 | 为了减少自然语言和推荐语义的gap，本文为user和item扩充词表使其与唯一的token绑定，并引入协同信号进行训练扩充的token的embedding | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/72044ed3-5b33-41b0-8e99-70cd62cfe9cb)|
 | LlamaRec: Two-Stage Recommendation using Large Language Models for Ranking     |  LlamaRec    |  CIKM23    |  一般LLM生成推荐结果的推理成本很高，并且要进一步Grounding。LlamaRec利用一个verbalizer ，将LLM head的输出(即所有tokens的分数)转换为候选items的排名分数      |![image](https://github.com/istarryn/LLM4REC/assets/149132603/350fd16d-5a75-4d31-a9b9-9d4ee5aa92b4) |
 |E4srec: An elegant effective efficient extensible solution of large language models for sequential recommendation|E4srec|arXiv23|提出使用可学习的projection head来将LLM预测结果映射到真实item空间|<img width="2128" height="1004" alt="image" src="https://github.com/user-attachments/assets/8f167141-23cd-4edc-a2e6-e0997b1dece5" />|
-|SLMRec: Distilling large language models into small for sequential recommendation|SLMRec|ICLR25|实验发现LLM的许多中间layer对推荐是冗余的。在E4srec的基础上提出分块知识蒸馏，减少了模型参数|<img width="1578" height="814" alt="image" src="https://github.com/user-attachments/assets/654038f4-7d13-4a03-bd53-5dd86570ec9a" />|
 |Msl: Not all tokens are what you need for tuning llm as a recommender| MSL | SIGIR25 | 为了解决LLM可能会生成虚构item的幻觉，提出了masked softmax loss来在训练过程中屏蔽非法token |<img width="1178" height="826" alt="image" src="https://github.com/user-attachments/assets/74f25fa7-ec7b-4635-bcf0-23b7fd36c549" />|
 
 
@@ -105,6 +104,8 @@
 | Collaborative Contextualization: Bridging the Gap between Collaborative Filtering and Pre-trained Language Model     |  CollabContext  |  arXiv23    |   利用LLM学习到的文本表征和传统模型表征进行双向蒸馏    |![image](https://github.com/istarryn/LLM4REC/assets/149132603/810425d8-65f4-4883-b1b8-021bb6ff6e03)|
 |   Can Small Language Models be Good Reasoners for Sequential Recommendation?    |  SLIM   |  WWW24  |   将大的LLM的逐步推理能力蒸馏到小的LLM中   | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/30e5222a-d8ba-4526-841c-ea3c56578279) |
 | RDRec: Rationale Distillation for LLM-based Recommendation | RDRec | arXiv24 | 现在的LLM4REC很少关注user产生interaction背后的rationale；让LLM通过prompt从review中提取user preference和item attribute，然后利用小LM进行蒸馏 | ![image](https://github.com/istarryn/LLM4REC/assets/149132603/6e9bea91-1568-49be-9cc4-3a9fb79b95a7) |
+|SLMRec: Distilling large language models into small for sequential recommendation|SLMRec|ICLR25|实验发现LLM的许多中间layer对推荐是冗余的。在E4srec的基础上提出分块知识蒸馏，减少了模型参数|<img width="1578" height="814" alt="image" src="https://github.com/user-attachments/assets/654038f4-7d13-4a03-bd53-5dd86570ec9a" />|
+|Large language models meet collaborative filtering: An efficient all-round llm-based recommender system|A-LLMRec|两阶段的推荐架构，一阶段通过“id emb和text emb的matching mse loss”、“emb降维的recon mse loss”、“user emb和item emb的rec bce loss”学习高质量的user emb，二阶段将user emb和item emb设计为可学习的token注入LLM的prompt中，能够在冻结LLM的参数的情况下取得不错的推荐结果|<img width="1894" height="582" alt="image" src="https://github.com/user-attachments/assets/20acd59e-d89d-4353-9653-24145f4ef063" />|
 
 
 ### architecture
