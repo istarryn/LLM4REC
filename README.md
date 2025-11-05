@@ -50,6 +50,7 @@
 | Title | Model | Time | Motivation | Discription |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
 |   U-BERT: Pre-training user representations for improved recommendation    |   U-BERT     |   AAAI21   |    早期的工作，主要使用BERT编码评论文本         |![image](https://github.com/istarryn/LLM4REC/assets/149132603/61c9c5b1-74b1-4837-8ed8-2e0815e772b4) |
+|Where to Go Next for Recommender Systems? ID- vs. Modality-based Recommender Models Revisited|MoRec|SIGIR23|提出用dimension transformation layer对PLM编码的emb进行降维，并且用于下游传统模型|<img width="1975" height="678" alt="image" src="https://github.com/user-attachments/assets/a602b988-0ada-4ae5-8dd3-abe2eb10bb03" />|
 |   Towards universal sequence representation learning for recommender systems    |    UniSRec   |   KDD22   |     用BERT对item text信息进行编码，使用了parametric whitening        |![image](https://github.com/istarryn/LLM4REC/assets/149132603/983492f4-c1c1-43fb-a61b-a3ed3410a8bb) |
 |   Learning vector-quantized item representation for transferable sequential recommenders    |    VQ-Rec    |  WWW23    |  首先将文本映射到一个离散索引向量（称为item code ）中，然后使用这些索引来查找code embedding table进行编码           |![image](https://github.com/istarryn/LLM4REC/assets/149132603/ffd44ae0-e85f-4982-9287-ad04ddfadd3c) |
 |  Representation Learning with Large Language Models for Recommendation     | RLMRec    |  WWW24  |    通过两次对比学习，对齐LLM编码的语义特征和传统方法的协同特征         |![image](https://github.com/istarryn/LLM4REC/assets/149132603/a4c0366c-e6f1-483d-992b-49ae4ca8dbad) |
