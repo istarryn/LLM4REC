@@ -61,7 +61,9 @@
 | Aligning Large Language Models with Recommendation Knowledge |  | arXiv24 | 将推荐领域的一些知识，例如MIM和BPR，通过prompt的形式将其传输给LLM | <img width="270" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/49c95f93-0676-4ad3-a24d-8c12c56a3ed3"> |
 | The Elephant in the Room: Rethinking the Usage of Pre-trained Language Model in Sequential Recommendation | Elephant in the Room | RecSys24 | 序列推荐的大模型的attention层的大部分参数都没有被使用，参数存在大量的冗余。本文将LLM学到的item embedding作为SASRec的初始化，然后再训练SASRec | <img width="378" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/21a58739-d184-4f4b-b3b8-f8f832e76122"> |
 | Demystifying Embedding Spaces using Large Language Models |  | ICLR24 | 用LLM对item的embedding空间进行解释，包括未在训练数据中出现过的item | <img width="357" alt="image" src="https://github.com/istarryn/LLM4REC/assets/57757493/39361365-f2de-4f50-a1fe-714ac0450cc4"> |
-
+|AlphaFuse: Learn ID Embeddings for Sequential Recommendation in Null Space of Language Embeddings|AlphaFuse|SIGIR25|利用SVD对LLM编码的item embedding进行降维，并且使用了奇异值标准化操作来进一步提升性能|<img width="961" height="76" alt="image" src="https://github.com/user-attachments/assets/f70d3177-2ca1-440b-be97-7eaf1cfc29cd" />|
+|LLM-ESR: Large Language Models Enhancement for Long-tailed Sequential Recommendation|LLM-ESR|NIPS24|提出在语义空间和协同空间双视角建模user emb，并且使用LLM 分析的user相似度进行蒸馏|<img width="1437" height="867" alt="image" src="https://github.com/user-attachments/assets/71d45d7e-31f3-43ad-957b-6c0b18fb2f64" />|
+|LLMInit: A Free Lunch from Large Language Models for Selective Initialization of Recommendation|LLMInit|arXiv25|提出从LLM的emb中挑选数值对id的emb进行初始化，有等间隔挑选、随机挑选、 依据方差挑选三种策略|<img width="856" height="816" alt="image" src="https://github.com/user-attachments/assets/60d51261-a965-4483-b8c7-ca9b6b3e565a" />|
 
 ## 2. LLMs serve as Recommenders
 ### prompt learning
