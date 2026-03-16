@@ -10,11 +10,14 @@
 2. LLM-based Recommendation
 	- prompt learning 
 	- instruction tuning
- 	- improve hallucination
+ 	- hallucination
 		- semantic id
-		- embedding-based prediction
-  		- masked softmax loss
-    - architecture
+		- embedding-based projection
+  		- textual-based grounding
+  		- beam search improvement 
+    - efficiency
+    	- training efficiency
+     	- inference efficiency
 
 3. Other Related work
 	- Self-distillation in LLM
