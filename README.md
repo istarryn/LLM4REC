@@ -1,22 +1,16 @@
 # LLM4REC
 ## OVERVIEW
-1. LLMs enhance Recommendation
-	- Feature Engineering
-		- data augmentation
-			- generate open-world knowledge for user/item
-			- generate interaction data
-	  	- data condense
-   		- data denoising
-	- Feature Encoder
-		- encode text information
-		- encode id information
+1. LLM-enhanced Recommendation
+	- data augmentation
+	- data condense
+	- data denoising
+	- semantic enhancement
+	- knowledge distillation
 
-2. LLMs as Recommenders
+2. LLM-based Recommendation
 	- prompt learning 
 	- instruction tuning
-	- efficiency
-		- knowledge distillation
- 	- hallucination
+ 	- improve hallucination
 		- semantic id
 		- embedding-based prediction
   		- masked softmax loss
