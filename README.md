@@ -43,9 +43,9 @@ This repository maintains a curated list of research papers on **Large Language 
 | Title                                                        | Year | Venue       | Brief                         |
 | ------------------------------------------------------------ | ---- | ----------- | ----------------------------- |
 | [Llm-enhanced representation learning for graph collaborative filtering recommendation models](https://link.springer.com/article/10.1007/s10844-025-00933-9) | 2025 | JIIS        | 图协同过滤表示增强            |
-| [Llm2rec: Large language models are powerful embedding models for sequential recommendation](https://dl.acm.org/doi/abs/10.1145/3711896.3737029) | 2025 | KDD         | 使用 LLM 作为嵌入模型         |
-| [Llmemb: Large language model can be a good embedding generator for sequential recommendation](https://ojs.aaai.org/index.php/AAAI/article/view/33327) | 2025 | AAAI        | 使用 LLM 生成序列推荐嵌入表示 |
-| [Self-supervised user embedding alignment for cross-domain recommendations via multi-LLM co-training](https://ieeexplore.ieee.org/abstract/document/11257683/) | 2025 | IEEE AANN   | 多 LLM 协同对齐跨域用户嵌入   |
+| [Llm2rec: Large language models are powerful embedding models for sequential recommendation](https://dl.acm.org/doi/abs/10.1145/3711896.3737029) | 2025 | KDD         | 使用 LLM 作为embedding模型         |
+| [Llmemb: Large language model can be a good embedding generator for sequential recommendation](https://ojs.aaai.org/index.php/AAAI/article/view/33327) | 2025 | AAAI        | 使用 LLM 生成序列推荐embedding表示 |
+| [Self-supervised user embedding alignment for cross-domain recommendations via multi-LLM co-training](https://ieeexplore.ieee.org/abstract/document/11257683/) | 2025 | IEEE AANN   | 多 LLM 协同对齐跨域用户embedding   |
 | [Large language model can interpret latent space of sequential recommender](https://dl.acm.org/doi/abs/10.1145/3786201) | 2026 | TOIS        | LLM 解释序列推荐潜在空间      |
 | [Pre-train, align, and disentangle: Empowering sequential recommendation with large language models](https://dl.acm.org/doi/abs/10.1145/3726302.3730059) | 2025 | SIGIR       | 预训练+对齐增强序列推荐       |
 | [Automated disentangled sequential recommendation with large language models](https://dl.acm.org/doi/abs/10.1145/3675164) | 2025 | TOIS        | LLM 支持解耦式序列推荐        |
@@ -71,7 +71,7 @@ This repository maintains a curated list of research papers on **Large Language 
 | [Unleashing the power of large language model for denoising recommendation](https://dl.acm.org/doi/abs/10.1145/3696410.3714758) | 2025 | WWW             | LLM 去噪增强         |
 | [Denoising alignment with large language model for recommendation](https://dl.acm.org/doi/abs/10.1145/3696662) | 2025 | TOIS            | LLM 对齐去噪         |
 | [Llminit: A free lunch from large language models for selective initialization of recommendation](https://aclanthology.org/2025.emnlp-industry.141/) | 2025 | EMNLP Industry  | LLM 初始化增强       |
-| [Efficient Cold-Start Recommendation via BPE Token-Level Embedding Initialization with LLM](https://ieeexplore.ieee.org/abstract/document/11332482/) | 2025 | IEEE AIAC       | LLM 冷启动嵌入初始化 |
+| [Efficient Cold-Start Recommendation via BPE Token-Level Embedding Initialization with LLM](https://ieeexplore.ieee.org/abstract/document/11332482/) | 2025 | IEEE AIAC       | LLM 冷启动embedding初始化 |
 | [GORACS: Group-level Optimal Transport-guided Coreset Selection for LLM-based Recommender Systems](https://dl.acm.org/doi/abs/10.1145/3711896.3736985) | 2025 | KDD             | Coreset选择优化      |
 
 ---
@@ -295,7 +295,7 @@ This repository maintains a curated list of research papers on **Large Language 
 | [Mllm4rec: multimodal information enhancing llm for sequential recommendation](https://link.springer.com/article/10.1007/s10844-024-00915-3) | 2025 | JIIS   | 多模态信息增强序列推荐 |
 | [Beyond visit trajectories: enhancing poi recommendation via llm-augmented text and image representations](https://dl.acm.org/doi/abs/10.1145/3705328.3748014) | 2025 | RecSys | 文本+图像增强 POI 推荐 |
 | [Enhanced emotion-aware music recommendation via large language models](https://dl.acm.org/doi/abs/10.1145/3711896.3737212) | 2025 | KDD    | 情绪感知音乐推荐       |
-| [Empowering large language model for sequential recommendation via multimodal embeddings and semantic ids](https://dl.acm.org/doi/abs/10.1145/3746252.3761169) | 2025 | CIKM   | 多模态嵌入增强         |
+| [Empowering large language model for sequential recommendation via multimodal embeddings and semantic ids](https://dl.acm.org/doi/abs/10.1145/3746252.3761169) | 2025 | CIKM   | 多模态embedding增强         |
 | [How Powerful are LLMs to Support Multimodal Recommendation? A Reproducibility Study of LLMRec](https://dl.acm.org/doi/abs/10.1145/3705328.3748154) | 2025 | RecSys | 复现研究               |
 
 | Title                                                        | Year | Venue                               | Brief                    |
