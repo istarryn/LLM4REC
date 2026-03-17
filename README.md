@@ -2,7 +2,7 @@
 
 This repository maintains a curated list of research papers on **Large Language Models for Recommendation (LLM4Rec)** published during **2025–2026**.
 
-> Read this for "*Paper List (before 2025)*" [here](README_before2025.m).
+> Read this for "*Paper List (before 2025)*" [here](README_before2025.md).
 
 **🚀 The list is continuously updated.**
 
