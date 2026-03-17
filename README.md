@@ -45,10 +45,7 @@ This repository maintains a curated list of research papers on **Large Language 
 | [Llm-enhanced representation learning for graph collaborative filtering recommendation models](https://link.springer.com/article/10.1007/s10844-025-00933-9) | 2025 | JIIS        | 图协同过滤表示增强            |
 | [Llm2rec: Large language models are powerful embedding models for sequential recommendation](https://dl.acm.org/doi/abs/10.1145/3711896.3737029) | 2025 | KDD         | 使用 LLM 作为embedding模型         |
 | [Llmemb: Large language model can be a good embedding generator for sequential recommendation](https://ojs.aaai.org/index.php/AAAI/article/view/33327) | 2025 | AAAI        | 使用 LLM 生成序列推荐embedding表示 |
-| [Self-supervised user embedding alignment for cross-domain recommendations via multi-LLM co-training](https://ieeexplore.ieee.org/abstract/document/11257683/) | 2025 | IEEE AANN   | 多 LLM 协同对齐跨域用户embedding   |
 | [Large language model can interpret latent space of sequential recommender](https://dl.acm.org/doi/abs/10.1145/3786201) | 2026 | TOIS        | LLM 解释序列推荐潜在空间      |
-| [Pre-train, align, and disentangle: Empowering sequential recommendation with large language models](https://dl.acm.org/doi/abs/10.1145/3726302.3730059) | 2025 | SIGIR       | 预训练+对齐增强序列推荐       |
-| [Automated disentangled sequential recommendation with large language models](https://dl.acm.org/doi/abs/10.1145/3675164) | 2025 | TOIS        | LLM 支持解耦式序列推荐        |
 | [Intent representation learning with large language model for recommendation](https://dl.acm.org/doi/abs/10.1145/3726302.3730011) | 2025 | SIGIR       | LLM增强用户意图表示           |
 | [Multi-view intent learning and alignment with large language models for session-based recommendation](https://dl.acm.org/doi/abs/10.1145/3719344) | 2025 | TOIS        | 多视图意图对齐                |
 | [Poi-enhancer: An llm-based semantic enhancement framework for poi representation learning](https://ojs.aaai.org/index.php/AAAI/article/view/33252) | 2025 | AAAI        | POI语义表示增强               |
@@ -121,6 +118,8 @@ This repository maintains a curated list of research papers on **Large Language 
 | [Generative recommendation with continuous-token diffusion](https://ui.adsabs.harvard.edu/abs/2025arXiv250412007Q/abstract) | 2025 | arXiv          | 扩散式生成推荐   |
 | [Large language model empowered logical relations mining for personalized recommendation](https://dl.acm.org/doi/abs/10.1145/3701716.3715574) | 2025 | WWW Companion  | 逻辑关系挖掘     |
 | [Reclm: Recommendation instruction tuning](https://aclanthology.org/2025.acl-long.751/) | 2025 | ACL            | 指令微调推荐     |
+| [Pre-train, align, and disentangle: Empowering sequential recommendation with large language models](https://dl.acm.org/doi/abs/10.1145/3726302.3730059) | 2025 | SIGIR       | 预训练+对齐增强序列推荐       |
+| [Automated disentangled sequential recommendation with large language models](https://dl.acm.org/doi/abs/10.1145/3675164) | 2025 | TOIS        | LLM 支持解耦式序列推荐        |
 
 ---
 
@@ -304,6 +303,7 @@ This repository maintains a curated list of research papers on **Large Language 
 | [Llmcdsr: Enhancing cross-domain sequential recommendation with large language models](https://dl.acm.org/doi/abs/10.1145/3715099) | 2025 | TOIS                                | 跨域序列推荐增强         |
 | [DCRLRec: Dual-domain contrastive reinforcement large language model for recommendation](https://www.sciencedirect.com/science/article/pii/S0306457325000810) | 2025 | Information Processing & Management | 双域对比强化学习增强推荐 |
 | [Bridge the domains: Large language models enhanced cross-domain sequential recommendation](https://dl.acm.org/doi/abs/10.1145/3726302.3729911) | 2025 | SIGIR                               | 跨域序列推荐增强         |
+| [Self-supervised user embedding alignment for cross-domain recommendations via multi-LLM co-training](https://ieeexplore.ieee.org/abstract/document/11257683/) | 2025 | IEEE AANN   | 多 LLM 协同对齐跨域用户embedding   |
 
 ## 4️⃣ Privacy / Fairness / Security / Bias
 
