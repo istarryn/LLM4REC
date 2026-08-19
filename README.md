@@ -141,7 +141,7 @@ This repository maintains a curated list of research papers on **Large Language 
 | [Generative recommendation models: Progress and directions](https://dl.acm.org/doi/abs/10.1145/3701716.3715856) | 2025 | WWW Companion | 生成推荐综述         |
 | [Think before Recommendation: Autonomous Reasoning-enhanced Recommender](https://arxiv.org/abs/2510.23077) | 2025 | arXiv         | 自主推理生成推荐     |
 | [Re2llm: reflective reinforcement large language model for session-based recommendation](https://ojs.aaai.org/index.php/AAAI/article/view/33399) | 2025 | AAAI          | 强化反思生成推荐     |
-| [Differentiable Semantic ID for Generative Recommendation](https://dl.acm.org/doi/10.1145/3805712.3809641) | 2026 | SIGIR          | 使SID可区分，并与GR模型共同优化     |
+| [Differentiable Semantic ID for Generative Recommendation](https://dl.acm.org/doi/10.1145/3805712.3809641) | 2026 | SIGIR          | 使SID可微，并与GR模型共同优化     |
 
 Differentiable Semantic ID for Generative Recommendation [code]
 ---
